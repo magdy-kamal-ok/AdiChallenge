@@ -1,0 +1,34 @@
+[
+    {
+    "user": {
+        "name": "ASD1",
+        "image": "IMAGE",
+        },
+    "contactNumbers": ["01234567890", "09876543211"]
+    }
+,
+{
+"user": {
+    "name": "ASD2",
+    "image": "IMAGE",
+    },
+"contactNumbers": ["01234567890", "09876543211"]
+}
+,
+{
+    "user": {
+        "name": "ASD3",
+        "image": "IMAGE",
+        },
+    "contactNumbers": ["01234567890", "09876543211"]
+    }
+,
+{
+"user": {
+    "name": "ASD4",
+    "image": "IMAGE",
+    },
+"contactNumbers": ["01234567890", "09876543211"]
+}
+
+]

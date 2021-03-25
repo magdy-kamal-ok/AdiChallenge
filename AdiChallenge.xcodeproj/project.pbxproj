@@ -8,13 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		01A8FAF5260CF867000CE4FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FAF4260CF867000CE4FB /* AppDelegate.swift */; };
-		01A8FAF7260CF867000CE4FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FAF6260CF867000CE4FB /* SceneDelegate.swift */; };
-		01A8FAF9260CF867000CE4FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FAF8260CF867000CE4FB /* ViewController.swift */; };
-		01A8FAFC260CF867000CE4FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01A8FAFA260CF867000CE4FB /* Main.storyboard */; };
 		01A8FAFE260CF868000CE4FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01A8FAFD260CF868000CE4FB /* Assets.xcassets */; };
 		01A8FB01260CF868000CE4FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01A8FAFF260CF868000CE4FB /* LaunchScreen.storyboard */; };
 		01A8FB0C260CF869000CE4FB /* AdiChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FB0B260CF869000CE4FB /* AdiChallengeTests.swift */; };
 		01A8FB17260CF869000CE4FB /* AdiChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FB16260CF869000CE4FB /* AdiChallengeUITests.swift */; };
+		01A8FB53260CFBBB000CE4FB /* NetworkLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01A8FB4A260CFBA9000CE4FB /* NetworkLayer.framework */; };
+		01A8FB54260CFBBB000CE4FB /* NetworkLayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 01A8FB4A260CFBA9000CE4FB /* NetworkLayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +31,39 @@
 			remoteGlobalIDString = 01A8FAF0260CF867000CE4FB;
 			remoteInfo = AdiChallenge;
 		};
+		01A8FB49260CFBA9000CE4FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01A8FB44260CFBA9000CE4FB /* NetworkLayer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 01C867D625C4798C002921E0;
+			remoteInfo = NetworkLayer;
+		};
+		01A8FB4B260CFBA9000CE4FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01A8FB44260CFBA9000CE4FB /* NetworkLayer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 01C867DF25C4798C002921E0;
+			remoteInfo = NetworkLayerTests;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		01A8FB55260CFBBB000CE4FB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				01A8FB54260CFBBB000CE4FB /* NetworkLayer.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		01A8FAF1260CF867000CE4FB /* AdiChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdiChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01A8FAF4260CF867000CE4FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		01A8FAF6260CF867000CE4FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		01A8FAF8260CF867000CE4FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		01A8FAFB260CF867000CE4FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		01A8FAFD260CF868000CE4FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01A8FB00260CF868000CE4FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		01A8FB02260CF868000CE4FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +73,7 @@
 		01A8FB12260CF869000CE4FB /* AdiChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdiChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01A8FB16260CF869000CE4FB /* AdiChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdiChallengeUITests.swift; sourceTree = "<group>"; };
 		01A8FB18260CF869000CE4FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01A8FB44260CFBA9000CE4FB /* NetworkLayer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NetworkLayer.xcodeproj; path = NetworkLayer/NetworkLayer.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01A8FB53260CFBBB000CE4FB /* NetworkLayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +109,7 @@
 				01A8FB0A260CF869000CE4FB /* AdiChallengeTests */,
 				01A8FB15260CF869000CE4FB /* AdiChallengeUITests */,
 				01A8FAF2260CF867000CE4FB /* Products */,
+				01A8FB52260CFBBB000CE4FB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +126,12 @@
 		01A8FAF3260CF867000CE4FB /* AdiChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				01A8FB40260CFAD1000CE4FB /* Utilities+Extensions */,
+				01A8FB3F260CFAC7000CE4FB /* Constants */,
+				01A8FB3E260CFAA5000CE4FB /* Components */,
+				01A8FB3D260CFA9E000CE4FB /* Localization */,
+				01A8FB3C260CFA94000CE4FB /* Modules */,
 				01A8FAF4260CF867000CE4FB /* AppDelegate.swift */,
-				01A8FAF6260CF867000CE4FB /* SceneDelegate.swift */,
-				01A8FAF8260CF867000CE4FB /* ViewController.swift */,
-				01A8FAFA260CF867000CE4FB /* Main.storyboard */,
 				01A8FAFD260CF868000CE4FB /* Assets.xcassets */,
 				01A8FAFF260CF868000CE4FB /* LaunchScreen.storyboard */,
 				01A8FB02260CF868000CE4FB /* Info.plist */,
@@ -128,6 +157,58 @@
 			path = AdiChallengeUITests;
 			sourceTree = "<group>";
 		};
+		01A8FB3C260CFA94000CE4FB /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				01A8FB44260CFBA9000CE4FB /* NetworkLayer.xcodeproj */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		01A8FB3D260CFA9E000CE4FB /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		01A8FB3E260CFAA5000CE4FB /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		01A8FB3F260CFAC7000CE4FB /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		01A8FB40260CFAD1000CE4FB /* Utilities+Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Utilities+Extensions";
+			sourceTree = "<group>";
+		};
+		01A8FB45260CFBA9000CE4FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				01A8FB4A260CFBA9000CE4FB /* NetworkLayer.framework */,
+				01A8FB4C260CFBA9000CE4FB /* NetworkLayerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		01A8FB52260CFBBB000CE4FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,6 +219,7 @@
 				01A8FAED260CF867000CE4FB /* Sources */,
 				01A8FAEE260CF867000CE4FB /* Frameworks */,
 				01A8FAEF260CF867000CE4FB /* Resources */,
+				01A8FB55260CFBBB000CE4FB /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -217,6 +299,12 @@
 			mainGroup = 01A8FAE8260CF866000CE4FB;
 			productRefGroup = 01A8FAF2260CF867000CE4FB /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 01A8FB45260CFBA9000CE4FB /* Products */;
+					ProjectRef = 01A8FB44260CFBA9000CE4FB /* NetworkLayer.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				01A8FAF0260CF867000CE4FB /* AdiChallenge */,
@@ -226,6 +314,23 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		01A8FB4A260CFBA9000CE4FB /* NetworkLayer.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = NetworkLayer.framework;
+			remoteRef = 01A8FB49260CFBA9000CE4FB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		01A8FB4C260CFBA9000CE4FB /* NetworkLayerTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = NetworkLayerTests.xctest;
+			remoteRef = 01A8FB4B260CFBA9000CE4FB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		01A8FAEF260CF867000CE4FB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
@@ -233,7 +338,6 @@
 			files = (
 				01A8FB01260CF868000CE4FB /* LaunchScreen.storyboard in Resources */,
 				01A8FAFE260CF868000CE4FB /* Assets.xcassets in Resources */,
-				01A8FAFC260CF867000CE4FB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +362,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01A8FAF9260CF867000CE4FB /* ViewController.swift in Sources */,
 				01A8FAF5260CF867000CE4FB /* AppDelegate.swift in Sources */,
-				01A8FAF7260CF867000CE4FB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +398,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		01A8FAFA260CF867000CE4FB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				01A8FAFB260CF867000CE4FB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		01A8FAFF260CF868000CE4FB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -439,6 +533,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J685J65365;
 				INFOPLIST_FILE = AdiChallenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -458,6 +553,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J685J65365;
 				INFOPLIST_FILE = AdiChallenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
