@@ -21,6 +21,8 @@
 		01A8FBA7260D0326000CE4FB /* AdiNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FBA6260D0326000CE4FB /* AdiNavigationBar.swift */; };
 		01A8FBB1260D0531000CE4FB /* MainScreenBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FBB0260D0531000CE4FB /* MainScreenBuilder.swift */; };
 		01A8FBBA260D05CA000CE4FB /* ProductDetailsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FBB9260D05CA000CE4FB /* ProductDetailsBuilder.swift */; };
+		01A8FBC3260D07EA000CE4FB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FBC2260D07EA000CE4FB /* Constants.swift */; };
+		01A8FBD6260D0EAE000CE4FB /* AdiImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FBD5260D0EAE000CE4FB /* AdiImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +90,8 @@
 		01A8FBA6260D0326000CE4FB /* AdiNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdiNavigationBar.swift; sourceTree = "<group>"; };
 		01A8FBB0260D0531000CE4FB /* MainScreenBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenBuilder.swift; sourceTree = "<group>"; };
 		01A8FBB9260D05CA000CE4FB /* ProductDetailsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsBuilder.swift; sourceTree = "<group>"; };
+		01A8FBC2260D07EA000CE4FB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		01A8FBD5260D0EAE000CE4FB /* AdiImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdiImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				01A8FBA6260D0326000CE4FB /* AdiNavigationBar.swift */,
+				01A8FBD5260D0EAE000CE4FB /* AdiImageView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -199,6 +204,7 @@
 		01A8FB3F260CFAC7000CE4FB /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				01A8FBC2260D07EA000CE4FB /* Constants.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -420,9 +426,11 @@
 				01A8FBB1260D0531000CE4FB /* MainScreenBuilder.swift in Sources */,
 				01A8FB81260D01A4000CE4FB /* Coordinator.swift in Sources */,
 				01A8FB9D260D0282000CE4FB /* MainScreenCoordinator.swift in Sources */,
+				01A8FBD6260D0EAE000CE4FB /* AdiImageView.swift in Sources */,
 				01A8FBBA260D05CA000CE4FB /* ProductDetailsBuilder.swift in Sources */,
 				01A8FB88260D01E0000CE4FB /* AppCoordinator.swift in Sources */,
 				01A8FAF5260CF867000CE4FB /* AppDelegate.swift in Sources */,
+				01A8FBC3260D07EA000CE4FB /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
