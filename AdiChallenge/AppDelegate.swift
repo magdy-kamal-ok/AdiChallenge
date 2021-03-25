@@ -12,16 +12,24 @@ import NetworkLayer
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var appCoordinator: AppCoordinator?
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        openHomeViewController()
+        startAppCoordinator()
         return true
     }
 
-    func openHomeViewController() {
-         window = UIWindow(frame: UIScreen.main.bounds)
-         //window?.rootViewController = HomeBuilder.startHomeController()
-         window?.makeKeyAndVisible()
-    }
 
+}
+
+extension AppDelegate {
+    func startAppCoordinator() {
+        let navController = UINavigationController.init(navigationBarClass: AdiNavigationBar.self, toolbarClass: nil)
+        appCoordinator = AppCoordinator(navigationController: navController)
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = navController
+        window?.makeKeyAndVisible()
+        appCoordinator?.start()
+    }
 }
