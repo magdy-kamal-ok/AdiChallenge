@@ -20,7 +20,8 @@ class MainScreenCoordinator: NSObject, Coordinator {
     func start() {
         let vc = MainScreenBuilder.viewController(coordinator: self)
         if let navbar = navigationController.navigationBar as? AdiNavigationBar {
-            navbar.addTitleNavigation(viewController: vc, title: "Home Screen")
+            navbar.updateCurrentViewController(viewController: vc)
+            navbar.setSearchBar()
         }
         navigationController.pushViewController(vc, animated: true)
     }

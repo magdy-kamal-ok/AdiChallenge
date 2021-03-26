@@ -12,6 +12,12 @@ class AdiNavigationBar: UINavigationBar {
     weak var curentViewController : UIViewController?
     var didPressNavBarBack: (() -> Void)?
     
+    lazy var searchBar: UISearchBar = {
+        let seachBar = UISearchBar()
+        seachBar.isTranslucent = false
+        return seachBar
+    }()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         barTintColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
@@ -21,12 +27,16 @@ class AdiNavigationBar: UINavigationBar {
         super.init(coder: aDecoder)!
     }
         
-    func updateCurrentViewController(viewController : UIViewController){
+    func updateCurrentViewController(viewController : UIViewController) {
         self.curentViewController = viewController
     }
     
-    func addTitleNavigation(viewController : UIViewController, title: String) {
-        viewController.navigationItem.title = title
+    func setTitleNavigation(title: String) {
+        curentViewController?.navigationItem.title = title
+    }
+    
+    func setSearchBar() {
+        curentViewController?.navigationItem.titleView = searchBar
     }
     
     func didPressBack() {
@@ -48,9 +58,10 @@ class AdiNavigationBar: UINavigationBar {
         self.curentViewController = viewController
         let backButton = UIButton(type: .custom)
         backButton.setImage(UIImage(named: ""), for: .normal)
+        backButton.setTitle("Back", for: .normal)
         backButton.addTarget(self, action: #selector(didPressBackBarButton), for: .touchUpInside)
         backButton.setTitleColor(.black, for: .normal)
         viewController.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: backButton)
     }
-
 }
+

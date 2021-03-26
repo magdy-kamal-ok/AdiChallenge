@@ -23,6 +23,29 @@
 		01A8FBBA260D05CA000CE4FB /* ProductDetailsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FBB9260D05CA000CE4FB /* ProductDetailsBuilder.swift */; };
 		01A8FBC3260D07EA000CE4FB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FBC2260D07EA000CE4FB /* Constants.swift */; };
 		01A8FBD6260D0EAE000CE4FB /* AdiImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FBD5260D0EAE000CE4FB /* AdiImageView.swift */; };
+		01A8FBE0260D1251000CE4FB /* AdiHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FBDE260D1251000CE4FB /* AdiHomeViewController.swift */; };
+		01A8FBE1260D1251000CE4FB /* AdiHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01A8FBDF260D1251000CE4FB /* AdiHomeViewController.xib */; };
+		01A8FBE7260D12A5000CE4FB /* AdiHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FBE6260D12A5000CE4FB /* AdiHomeViewModel.swift */; };
+		01A8FBEB260D1AD9000CE4FB /* Binder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FBEA260D1AD9000CE4FB /* Binder.swift */; };
+		01A8FBF0260D2297000CE4FB /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FBEF260D2297000CE4FB /* Product.swift */; };
+		01A8FC03260D2613000CE4FB /* HomeProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FC01260D2613000CE4FB /* HomeProductTableViewCell.swift */; };
+		01A8FC04260D2613000CE4FB /* HomeProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01A8FC02260D2613000CE4FB /* HomeProductTableViewCell.xib */; };
+		01A8FC09260D2832000CE4FB /* UITableView+Register..swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FC08260D2832000CE4FB /* UITableView+Register..swift */; };
+		01A8FC21260D2DCC000CE4FB /* HomeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FC20260D2DCC000CE4FB /* HomeRepository.swift */; };
+		01A8FC25260D2EB3000CE4FB /* RequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FC24260D2EB3000CE4FB /* RequestFactory.swift */; };
+		01A8FC2A260D2F04000CE4FB /* RemoteHomeDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FC29260D2F04000CE4FB /* RemoteHomeDataSource.swift */; };
+		01A8FC35260D3743000CE4FB /* ProductDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FC33260D3743000CE4FB /* ProductDetailsViewController.swift */; };
+		01A8FC36260D3743000CE4FB /* ProductDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01A8FC34260D3743000CE4FB /* ProductDetailsViewController.xib */; };
+		01A8FC3E260D3C7A000CE4FB /* ProductDetailsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FC3D260D3C7A000CE4FB /* ProductDetailsHeaderView.swift */; };
+		01A8FC44260D3C86000CE4FB /* ProductDetailsHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01A8FC43260D3C86000CE4FB /* ProductDetailsHeaderView.xib */; };
+		01A8FC4B260D4380000CE4FB /* ZoomTransitionAnimating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FC4A260D4380000CE4FB /* ZoomTransitionAnimating.swift */; };
+		01A8FC51260D438A000CE4FB /* ZoomTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FC50260D438A000CE4FB /* ZoomTransitionAnimator.swift */; };
+		01A8FC5D260D5160000CE4FB /* ProductReviewsHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01A8FC5C260D515F000CE4FB /* ProductReviewsHeaderView.xib */; };
+		01A8FC63260D516D000CE4FB /* ProductReviewsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FC62260D516D000CE4FB /* ProductReviewsHeaderView.swift */; };
+		01A8FC6F260D62D5000CE4FB /* ProductReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FC6D260D62D5000CE4FB /* ProductReviewTableViewCell.swift */; };
+		01A8FC70260D62D5000CE4FB /* ProductReviewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01A8FC6E260D62D5000CE4FB /* ProductReviewTableViewCell.xib */; };
+		01A8FC77260D644B000CE4FB /* ProductDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FC76260D644B000CE4FB /* ProductDetailsViewModel.swift */; };
+		01A8FC7B260D726C000CE4FB /* HomeProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FC7A260D726C000CE4FB /* HomeProductModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +115,29 @@
 		01A8FBB9260D05CA000CE4FB /* ProductDetailsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsBuilder.swift; sourceTree = "<group>"; };
 		01A8FBC2260D07EA000CE4FB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		01A8FBD5260D0EAE000CE4FB /* AdiImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdiImageView.swift; sourceTree = "<group>"; };
+		01A8FBDE260D1251000CE4FB /* AdiHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdiHomeViewController.swift; sourceTree = "<group>"; };
+		01A8FBDF260D1251000CE4FB /* AdiHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdiHomeViewController.xib; sourceTree = "<group>"; };
+		01A8FBE6260D12A5000CE4FB /* AdiHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdiHomeViewModel.swift; sourceTree = "<group>"; };
+		01A8FBEA260D1AD9000CE4FB /* Binder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Binder.swift; sourceTree = "<group>"; };
+		01A8FBEF260D2297000CE4FB /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		01A8FC01260D2613000CE4FB /* HomeProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProductTableViewCell.swift; sourceTree = "<group>"; };
+		01A8FC02260D2613000CE4FB /* HomeProductTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeProductTableViewCell.xib; sourceTree = "<group>"; };
+		01A8FC08260D2832000CE4FB /* UITableView+Register..swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Register..swift"; sourceTree = "<group>"; };
+		01A8FC20260D2DCC000CE4FB /* HomeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRepository.swift; sourceTree = "<group>"; };
+		01A8FC24260D2EB3000CE4FB /* RequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestFactory.swift; sourceTree = "<group>"; };
+		01A8FC29260D2F04000CE4FB /* RemoteHomeDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteHomeDataSource.swift; sourceTree = "<group>"; };
+		01A8FC33260D3743000CE4FB /* ProductDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewController.swift; sourceTree = "<group>"; };
+		01A8FC34260D3743000CE4FB /* ProductDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductDetailsViewController.xib; sourceTree = "<group>"; };
+		01A8FC3D260D3C7A000CE4FB /* ProductDetailsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsHeaderView.swift; sourceTree = "<group>"; };
+		01A8FC43260D3C86000CE4FB /* ProductDetailsHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductDetailsHeaderView.xib; sourceTree = "<group>"; };
+		01A8FC4A260D4380000CE4FB /* ZoomTransitionAnimating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomTransitionAnimating.swift; sourceTree = "<group>"; };
+		01A8FC50260D438A000CE4FB /* ZoomTransitionAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomTransitionAnimator.swift; sourceTree = "<group>"; };
+		01A8FC5C260D515F000CE4FB /* ProductReviewsHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductReviewsHeaderView.xib; sourceTree = "<group>"; };
+		01A8FC62260D516D000CE4FB /* ProductReviewsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductReviewsHeaderView.swift; sourceTree = "<group>"; };
+		01A8FC6D260D62D5000CE4FB /* ProductReviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductReviewTableViewCell.swift; sourceTree = "<group>"; };
+		01A8FC6E260D62D5000CE4FB /* ProductReviewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductReviewTableViewCell.xib; sourceTree = "<group>"; };
+		01A8FC76260D644B000CE4FB /* ProductDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewModel.swift; sourceTree = "<group>"; };
+		01A8FC7A260D726C000CE4FB /* HomeProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProductModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +258,10 @@
 		01A8FB40260CFAD1000CE4FB /* Utilities+Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				01A8FC49260D4372000CE4FB /* Transition */,
+				01A8FBEA260D1AD9000CE4FB /* Binder.swift */,
+				01A8FC08260D2832000CE4FB /* UITableView+Register..swift */,
+				01A8FC24260D2EB3000CE4FB /* RequestFactory.swift */,
 			);
 			path = "Utilities+Extensions";
 			sourceTree = "<group>";
@@ -255,6 +305,9 @@
 		01A8FBAF260D04F9000CE4FB /* HomeAdi */ = {
 			isa = PBXGroup;
 			children = (
+				01A8FBDD260D1232000CE4FB /* Models */,
+				01A8FBDC260D122B000CE4FB /* ViewModels */,
+				01A8FBDB260D1226000CE4FB /* Views */,
 				01A8FBB0260D0531000CE4FB /* MainScreenBuilder.swift */,
 			);
 			path = HomeAdi;
@@ -263,9 +316,113 @@
 		01A8FBB8260D0591000CE4FB /* ProductDetails */ = {
 			isa = PBXGroup;
 			children = (
+				01A8FC32260D370D000CE4FB /* ViewModels */,
+				01A8FC31260D3708000CE4FB /* Views */,
 				01A8FBB9260D05CA000CE4FB /* ProductDetailsBuilder.swift */,
 			);
 			path = ProductDetails;
+			sourceTree = "<group>";
+		};
+		01A8FBDB260D1226000CE4FB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				01A8FC00260D25BC000CE4FB /* Cells */,
+				01A8FBDE260D1251000CE4FB /* AdiHomeViewController.swift */,
+				01A8FBDF260D1251000CE4FB /* AdiHomeViewController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		01A8FBDC260D122B000CE4FB /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				01A8FBE6260D12A5000CE4FB /* AdiHomeViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		01A8FBDD260D1232000CE4FB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				01A8FC28260D2EF5000CE4FB /* Data */,
+				01A8FBEE260D2280000CE4FB /* ResponseModels */,
+				01A8FC20260D2DCC000CE4FB /* HomeRepository.swift */,
+				01A8FC7A260D726C000CE4FB /* HomeProductModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		01A8FBEE260D2280000CE4FB /* ResponseModels */ = {
+			isa = PBXGroup;
+			children = (
+				01A8FBEF260D2297000CE4FB /* Product.swift */,
+			);
+			path = ResponseModels;
+			sourceTree = "<group>";
+		};
+		01A8FC00260D25BC000CE4FB /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				01A8FC01260D2613000CE4FB /* HomeProductTableViewCell.swift */,
+				01A8FC02260D2613000CE4FB /* HomeProductTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		01A8FC28260D2EF5000CE4FB /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				01A8FC29260D2F04000CE4FB /* RemoteHomeDataSource.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		01A8FC31260D3708000CE4FB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				01A8FC6A260D62B3000CE4FB /* Cells */,
+				01A8FC3B260D3BD7000CE4FB /* Headers */,
+				01A8FC33260D3743000CE4FB /* ProductDetailsViewController.swift */,
+				01A8FC34260D3743000CE4FB /* ProductDetailsViewController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		01A8FC32260D370D000CE4FB /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				01A8FC76260D644B000CE4FB /* ProductDetailsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		01A8FC3B260D3BD7000CE4FB /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				01A8FC3D260D3C7A000CE4FB /* ProductDetailsHeaderView.swift */,
+				01A8FC43260D3C86000CE4FB /* ProductDetailsHeaderView.xib */,
+				01A8FC5C260D515F000CE4FB /* ProductReviewsHeaderView.xib */,
+				01A8FC62260D516D000CE4FB /* ProductReviewsHeaderView.swift */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		01A8FC49260D4372000CE4FB /* Transition */ = {
+			isa = PBXGroup;
+			children = (
+				01A8FC4A260D4380000CE4FB /* ZoomTransitionAnimating.swift */,
+				01A8FC50260D438A000CE4FB /* ZoomTransitionAnimator.swift */,
+			);
+			path = Transition;
+			sourceTree = "<group>";
+		};
+		01A8FC6A260D62B3000CE4FB /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				01A8FC6D260D62D5000CE4FB /* ProductReviewTableViewCell.swift */,
+				01A8FC6E260D62D5000CE4FB /* ProductReviewTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -396,6 +553,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				01A8FB01260CF868000CE4FB /* LaunchScreen.storyboard in Resources */,
+				01A8FBE1260D1251000CE4FB /* AdiHomeViewController.xib in Resources */,
+				01A8FC5D260D5160000CE4FB /* ProductReviewsHeaderView.xib in Resources */,
+				01A8FC36260D3743000CE4FB /* ProductDetailsViewController.xib in Resources */,
+				01A8FC04260D2613000CE4FB /* HomeProductTableViewCell.xib in Resources */,
+				01A8FC70260D62D5000CE4FB /* ProductReviewTableViewCell.xib in Resources */,
+				01A8FC44260D3C86000CE4FB /* ProductDetailsHeaderView.xib in Resources */,
 				01A8FAFE260CF868000CE4FB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,12 +587,29 @@
 				01A8FBA3260D02CD000CE4FB /* ProductDetailsCoordinator.swift in Sources */,
 				01A8FBA7260D0326000CE4FB /* AdiNavigationBar.swift in Sources */,
 				01A8FBB1260D0531000CE4FB /* MainScreenBuilder.swift in Sources */,
+				01A8FC35260D3743000CE4FB /* ProductDetailsViewController.swift in Sources */,
+				01A8FBEB260D1AD9000CE4FB /* Binder.swift in Sources */,
 				01A8FB81260D01A4000CE4FB /* Coordinator.swift in Sources */,
+				01A8FC09260D2832000CE4FB /* UITableView+Register..swift in Sources */,
+				01A8FC51260D438A000CE4FB /* ZoomTransitionAnimator.swift in Sources */,
+				01A8FBE7260D12A5000CE4FB /* AdiHomeViewModel.swift in Sources */,
+				01A8FC25260D2EB3000CE4FB /* RequestFactory.swift in Sources */,
+				01A8FC4B260D4380000CE4FB /* ZoomTransitionAnimating.swift in Sources */,
+				01A8FC3E260D3C7A000CE4FB /* ProductDetailsHeaderView.swift in Sources */,
 				01A8FB9D260D0282000CE4FB /* MainScreenCoordinator.swift in Sources */,
+				01A8FC63260D516D000CE4FB /* ProductReviewsHeaderView.swift in Sources */,
+				01A8FC6F260D62D5000CE4FB /* ProductReviewTableViewCell.swift in Sources */,
 				01A8FBD6260D0EAE000CE4FB /* AdiImageView.swift in Sources */,
+				01A8FC7B260D726C000CE4FB /* HomeProductModel.swift in Sources */,
 				01A8FBBA260D05CA000CE4FB /* ProductDetailsBuilder.swift in Sources */,
+				01A8FC77260D644B000CE4FB /* ProductDetailsViewModel.swift in Sources */,
+				01A8FBF0260D2297000CE4FB /* Product.swift in Sources */,
+				01A8FC21260D2DCC000CE4FB /* HomeRepository.swift in Sources */,
+				01A8FC03260D2613000CE4FB /* HomeProductTableViewCell.swift in Sources */,
 				01A8FB88260D01E0000CE4FB /* AppCoordinator.swift in Sources */,
 				01A8FAF5260CF867000CE4FB /* AppDelegate.swift in Sources */,
+				01A8FBE0260D1251000CE4FB /* AdiHomeViewController.swift in Sources */,
+				01A8FC2A260D2F04000CE4FB /* RemoteHomeDataSource.swift in Sources */,
 				01A8FBC3260D07EA000CE4FB /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -599,7 +779,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J685J65365;
+				DEVELOPMENT_TEAM = Z3D89T937N;
 				INFOPLIST_FILE = AdiChallenge/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -619,7 +799,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J685J65365;
+				DEVELOPMENT_TEAM = Z3D89T937N;
 				INFOPLIST_FILE = AdiChallenge/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -60,7 +60,7 @@ public class URLSessionApiClientManager: NetworkManagerProtocol {
                         }
                     }
                 } else {
-                    let unknownError = ErrorModel(code:  LocalError.unknownError.errorCode, message: LocalError.noInternetConnection.localizedDescription, error: nil, url: apiComponents.getApiUrl())
+                    let unknownError = ErrorModel(code:  LocalError.unknownError.errorCode, message: LocalError.unknownError.localizedDescription, error: nil, url: apiComponents.getApiUrl())
                     completionHandler(ResultModel.faliure(unknownError, nil))
                 }
             })

@@ -34,10 +34,12 @@ class AppCoordinator: NSObject, Coordinator
 
     func addViewToNavigationStack(coordinator : Coordinator){
         navigationController.delegate = self
+        navigationController.interactivePopGestureRecognizer?.delegate = self
         childCoordinators.append(coordinator)
     }
 }
 extension AppCoordinator : UINavigationControllerDelegate {
+    
     func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
         guard let fromViewController = navigationController.transitionCoordinator?.viewController(forKey: .from) else {
             return
@@ -46,9 +48,31 @@ extension AppCoordinator : UINavigationControllerDelegate {
         if navigationController.viewControllers.contains(fromViewController) {
             return
         }
-        
+    }
+    
+    func navigationController(_ navigationController: UINavigationController,
+        animationControllerFor operation: UINavigationController.Operation,
+        from fromVC: UIViewController,
+        to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        guard let sourceTransition = fromVC as? ZoomTransitionAnimating,
+            let destinationTransition = toVC as? ZoomTransitionable else {
+                return nil
+        }
+
+        let animator = ZoomTransitionAnimator()
+        animator.goingForward = (operation == .push)
+        animator.sourceTransition = sourceTransition
+        animator.destinationTransition = destinationTransition
+        return animator;
     }
 }
+
+extension AppCoordinator: UIGestureRecognizerDelegate {
+    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldBeRequiredToFailBy otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+        return true
+    }
+}
+
 extension AppCoordinator {
     func childDidFinish(_ child: Coordinator?) {
         for (index, coordinator) in childCoordinators.enumerated() {
@@ -58,9 +82,4 @@ extension AppCoordinator {
             }
         }
     }
-}
-
-
-public class Product {
-    var name: String = ""
 }

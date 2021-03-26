@@ -26,7 +26,8 @@ class ProductDetailsCoordinator: NSObject, Coordinator {
     func start() {
         let vc = ProductDetailsBuilder.viewController(product: product, coordinator: self)
         if let navbar = navigationController.navigationBar as? AdiNavigationBar {
-            navbar.addTitleNavigation(viewController: vc, title: product.name)
+            navbar.updateCurrentViewController(viewController: vc)
+            navbar.setTitleNavigation(title: product.name)
             navbar.addLeftNavigationBarView(viewController: vc)
             navbar.didPressNavBarBack  = { [weak self] in
                 guard let self = self else { return }

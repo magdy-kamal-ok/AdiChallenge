@@ -11,6 +11,6 @@ public struct ProductDetailsBuilder {
 
     public static func viewController(product: Product, coordinator: Coordinator) -> UIViewController {
         
-        return UIViewController()
+        return ProductDetailsViewController(viewModel: ProductDetailsViewModel(product: product, coordinator: coordinator))
     }
 }
