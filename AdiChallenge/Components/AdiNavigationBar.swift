@@ -57,8 +57,8 @@ class AdiNavigationBar: UINavigationBar {
     func addLeftNavigationBarView(viewController : UIViewController) {
         self.curentViewController = viewController
         let backButton = UIButton(type: .custom)
-        backButton.setImage(UIImage(named: ""), for: .normal)
-        backButton.setTitle("Back", for: .normal)
+        backButton.setImage(UIImage(named: "ic-back"), for: .normal)
+        backButton.setTitle("back".localized, for: .normal)
         backButton.addTarget(self, action: #selector(didPressBackBarButton), for: .touchUpInside)
         backButton.setTitleColor(.black, for: .normal)
         viewController.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: backButton)

@@ -10,6 +10,7 @@ import UIKit
 public struct MainScreenBuilder {
 
     public static func viewController(coordinator: Coordinator) -> UIViewController {
-        return AdiHomeViewController(viewModel: AdiHomeViewModel(homeRepository: HomeRepository(), coordinator: coordinator))
+        let viewModel = AdiHomeViewModel(homeRepository: HomeRepository(), coordinator: coordinator)
+        return AdiHomeViewController(viewModel: viewModel)
     }
 }

@@ -12,8 +12,8 @@ class RemoteHomeDataSource: HomeRepositoryProtocol {
     
     private let dataProvider: DataProvider<[Product], AdiErrorModel>
     
-    required init(requstHandler: RequstHandlerProtocol) {
-        dataProvider = DataProvider(requestHandler: requstHandler)
+    required init(requestHandler: RequstHandlerProtocol) {
+        dataProvider = DataProvider(requestHandler: requestHandler)
     }
     
     private func getUnknownError() -> ErrorModel {

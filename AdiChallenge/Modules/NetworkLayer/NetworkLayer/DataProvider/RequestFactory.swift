@@ -8,7 +8,7 @@
 import Foundation
 
 public class RequestFactory: RequstHandlerProtocol {
-
+    
     var url: String
     var method: RequestMethod
     var headers: [String: String]?
@@ -50,5 +50,9 @@ public class RequestFactory: RequstHandlerProtocol {
     
     public func setRequestParameters(params: [String : Any]?) {
         self.parameters = params
+    }
+    
+    public func getAutoRetryCount() -> Int {
+        3
     }
 }

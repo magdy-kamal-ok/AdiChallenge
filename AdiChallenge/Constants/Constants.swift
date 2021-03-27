@@ -11,6 +11,7 @@ class Constants {
     
     // MARK: Request Constants
     private static let baseURL = "http://localhost:3001"
-    public static let productsApiURL =  "http://localhost:3001/product"
+    public static let productsApiURL = "http://localhost:3001/product"
+    public static let reviewsApiURL = "http://localhost:3002/reviews/%@"
     
 }

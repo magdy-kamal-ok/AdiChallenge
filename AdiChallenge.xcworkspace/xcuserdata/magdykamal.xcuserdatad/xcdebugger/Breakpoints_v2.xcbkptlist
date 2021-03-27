@@ -1,71 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bucket
-   uuid = "0FFED234-FF2F-4F4E-9FC7-4CD365025D05"
+   uuid = "7791EF45-5935-4028-A49C-AD01E949F017"
    type = "0"
    version = "2.0">
    <Breakpoints>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "33632413-A78C-4B7B-9351-040364B3B387"
+            uuid = "87626A59-01F7-4920-A659-691181FDECA6"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AdiChallenge/Modules/NetworkLayer/NetworkLayer/Managers/URLSessionApiClientManager.swift"
+            filePath = "AdiChallenge/Modules/NetworkLayer/NetworkLayer/DataProvider/DataProvider.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "fetchResponse(apiComponents:completionHandler:)"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "handleResult(response:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "37095965-6874-437D-B704-EC348E90B8F8"
+            uuid = "DCBF0C49-7501-4E94-92CE-D537A7B96139"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AdiChallenge/Features/HomeAdi/Views/AdiHomeViewController.swift"
+            filePath = "AdiChallenge/Modules/NetworkLayer/NetworkLayer/DataProvider/DataProvider.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
-            landmarkName = "tableView(_:didSelectRowAt:)"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "handleResult(response:)"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "7BB04D42-ECEF-4ADE-990A-BE5FB278981B"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AdiChallenge/Coordinator/AppCoordinator.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
-            landmarkName = "addViewToNavigationStack(coordinator:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "43C22526-2FCC-4D0D-961B-157EC8944C6C"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AdiChallenge/Features/HomeAdi/ViewModels/AdiHomeViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
-            landmarkName = "searchText"
-            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "DCBF0C49-7501-4E94-92CE-D537A7B96139 - 3e7597186d8a3c20"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NetworkLayer.DataProvider.(handleResult in _EA1176DCEF0B178502BA0736F52844CA)(response: NetworkLayer.ResultModel) -&gt; (Swift.Optional&lt;A&gt;, Swift.Optional&lt;Swift.Error&gt;)"
+                  moduleName = "NetworkLayer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/magdykamal/Desktop/Projects/AdiChallenge/AdiChallenge/Modules/NetworkLayer/NetworkLayer/DataProvider/DataProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "323">
+               </Location>
+               <Location
+                  uuid = "DCBF0C49-7501-4E94-92CE-D537A7B96139 - 3e7597186d8a3c20"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NetworkLayer.DataProvider.(handleResult in _EA1176DCEF0B178502BA0736F52844CA)(response: NetworkLayer.ResultModel) -&gt; (Swift.Optional&lt;A&gt;, Swift.Optional&lt;Swift.Error&gt;)"
+                  moduleName = "NetworkLayer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/magdykamal/Desktop/Projects/AdiChallenge/AdiChallenge/Modules/NetworkLayer/NetworkLayer/DataProvider/DataProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "373">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

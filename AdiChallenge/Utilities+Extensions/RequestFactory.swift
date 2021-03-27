@@ -16,9 +16,9 @@ public class RequestFactory: RequstHandlerProtocol {
     var parameters: [String: Any]?
     var encoding: RequestEncoding
 
-    public init(url: String,
+    init(url: String,
          method: RequestMethod = .get,
-         headers: [String: String]? = ["Content-Type": "application/json"],
+         headers: [String: String]? = ["Content-Type": "application/json", "Accept-Language": "en-US"],
          parameters: [String: Any]? = nil,
          encoding: RequestEncoding = .jsonEncoding) {
         self.url = url
@@ -26,7 +26,10 @@ public class RequestFactory: RequstHandlerProtocol {
         self.headers = headers
         self.parameters = parameters
         self.encoding = encoding
-
+    }
+    
+    convenience init(url: String, method: RequestMethod = .get) {
+        self.init(url: url, method: method, headers: ["Content-Type": "application/json", "Accept-Language": "en-US"], parameters: nil, encoding: .jsonEncoding)
     }
     
     public func getApiUrl() -> String {
@@ -51,6 +54,10 @@ public class RequestFactory: RequstHandlerProtocol {
     
     public func setRequestParameters(params: [String : Any]?) {
         self.parameters = params
+    }
+    
+    public func getAutoRetryCount() -> Int {
+        3
     }
 }
 

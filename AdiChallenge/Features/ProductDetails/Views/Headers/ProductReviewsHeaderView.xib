@@ -22,6 +22,7 @@
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9rw-I8-h8A">
                     <rect key="frame" x="375" y="14" width="21" height="21"/>
+                    <accessibility key="accessibilityConfiguration" identifier="AdiProductDetailsAddReviewButtonIdentifier"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="9rw-I8-h8A" secondAttribute="height" id="4Bx-ub-Ixu"/>
                         <constraint firstAttribute="height" constant="21" id="opG-og-k2M"/>
@@ -33,6 +34,7 @@
                 </button>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <accessibility key="accessibilityConfiguration" identifier="AdiProductDetailsReviewsHeaderIdentifier"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="9rw-I8-h8A" secondAttribute="trailing" constant="8" id="7tU-KC-jb1"/>
                 <constraint firstItem="9rw-I8-h8A" firstAttribute="leading" secondItem="oBu-y1-6uU" secondAttribute="trailing" constant="8" id="8Qo-Fs-NQW"/>

@@ -13,18 +13,28 @@ public class DataProvider<R, E> where E: Decodable & Error, R: Decodable {
     public private(set) var requestHandler: RequstHandlerProtocol!
     private var apiClientManager: NetworkManagerProtocol!
     private var parser: ParserHandlerProtocol!
-
+    private var retryCount = 0
+    
     public init(requestHandler: RequstHandlerProtocol, apiClientManager: NetworkManagerProtocol = URLSessionApiClientManager(), parser: ParserHandlerProtocol = CodableParserManager()) {
-
         self.apiClientManager = apiClientManager
         self.requestHandler = requestHandler
         self.parser = parser
     }
     
     public func execute(completionHandler: @escaping DataProviderResponseResult) {
+        self.retryCount = 0
+        startExecution(completionHandler: completionHandler)
+    }
+    
+    private func startExecution(completionHandler: @escaping DataProviderResponseResult) {
         fetchResponse(apiComponents: requestHandler) { [weak self] result in
             guard let self = self else { return }
-            completionHandler(self.handleResult(response: result))
+            if case .faliure = result, self.retryCount < self.requestHandler.getAutoRetryCount() {
+                self.retryCount += 1
+                self.startExecution(completionHandler: completionHandler)
+            } else {
+                completionHandler(self.handleResult(response: result))
+            }
         }
     }
 

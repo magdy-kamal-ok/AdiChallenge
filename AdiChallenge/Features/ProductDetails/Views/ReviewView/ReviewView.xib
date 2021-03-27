@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReviewView" customModule="AdiChallenge" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="iN0-l3-epB" id="YEW-YU-7ZG"/>
+                <outlet property="ratingView" destination="Zd9-qP-aPH" id="qv8-Kd-YkJ"/>
+                <outlet property="reviewTextView" destination="kfD-zz-jDT" id="C7u-Y4-XNd"/>
+                <outlet property="titleLabel" destination="Dz1-1Q-Lje" id="Zz8-Mg-Pl5"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="410" height="414"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dz1-1Q-Lje">
+                    <rect key="frame" x="8" y="8" width="394" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zd9-qP-aPH" customClass="CosmosView" customModule="Cosmos">
+                    <rect key="frame" x="115" y="16" width="180" height="24"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <accessibility key="accessibilityConfiguration" identifier="AdiProductDetailsReviewRatingIdentifier"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="tLD-h3-SSN"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                            <real key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="starColor">
+                            <color key="value" systemColor="systemYellowColor"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kfD-zz-jDT">
+                    <rect key="frame" x="8" y="48" width="394" height="358"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <accessibility key="accessibilityConfiguration" identifier="AdiProductDetailsReviewTextViewIdentifier"/>
+                    <color key="textColor" systemColor="labelColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Zd9-qP-aPH" firstAttribute="top" secondItem="Dz1-1Q-Lje" secondAttribute="bottom" constant="8" id="BFx-j0-GxI"/>
+                <constraint firstItem="kfD-zz-jDT" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="GcW-d5-CQr"/>
+                <constraint firstItem="Zd9-qP-aPH" firstAttribute="top" secondItem="Dz1-1Q-Lje" secondAttribute="bottom" constant="8" id="L7v-Aw-LaH"/>
+                <constraint firstAttribute="trailing" secondItem="kfD-zz-jDT" secondAttribute="trailing" constant="8" id="VXj-0L-S2g"/>
+                <constraint firstItem="Zd9-qP-aPH" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="bcf-9x-95f"/>
+                <constraint firstItem="Dz1-1Q-Lje" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="f5T-kU-5Tx"/>
+                <constraint firstItem="Dz1-1Q-Lje" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="mft-ja-8KY"/>
+                <constraint firstAttribute="trailing" secondItem="Dz1-1Q-Lje" secondAttribute="trailing" constant="8" id="nOV-iM-vaE"/>
+                <constraint firstAttribute="bottom" secondItem="kfD-zz-jDT" secondAttribute="bottom" constant="8" id="rz6-Cd-2yU"/>
+                <constraint firstItem="kfD-zz-jDT" firstAttribute="top" secondItem="Zd9-qP-aPH" secondAttribute="bottom" constant="8" id="xCL-Tq-5ql"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-127.53623188405798" y="67.633928571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

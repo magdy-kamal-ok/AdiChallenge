@@ -11,7 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AdiHomeViewController" customModule="AdiChallenge" customModuleProvider="target">
             <connections>
-                <outlet property="activityIndicator" destination="1AU-cw-lWe" id="sNM-f4-tcZ"/>
+                <outlet property="activityLoadingIndicator" destination="1AU-cw-lWe" id="sNM-f4-tcZ"/>
                 <outlet property="tableView" destination="dxJ-qP-Fz9" id="EbG-YO-IkQ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -35,7 +35,9 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="dxJ-qP-Fz9" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="11M-88-ks6"/>
+                <constraint firstItem="1AU-cw-lWe" firstAttribute="centerX" secondItem="dxJ-qP-Fz9" secondAttribute="centerX" id="HYp-2t-m7i"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dxJ-qP-Fz9" secondAttribute="trailing" id="KJB-1T-6ZW"/>
+                <constraint firstItem="dxJ-qP-Fz9" firstAttribute="centerY" secondItem="1AU-cw-lWe" secondAttribute="centerY" constant="5" id="ckp-o9-GAh"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="dxJ-qP-Fz9" secondAttribute="bottom" id="ghH-rW-Emp"/>
                 <constraint firstItem="dxJ-qP-Fz9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="oNB-t7-43m"/>
             </constraints>

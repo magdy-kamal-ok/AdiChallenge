@@ -25,7 +25,7 @@ class HomeRepository: HomeRepositoryProtocol {
     
     private let remoteDataSource: HomeRepositoryProtocol
 
-    init(remoteDataSource: HomeRepositoryProtocol = RemoteHomeDataSource(requstHandler: RequestFactory(url: Constants.productsApiURL))) {
+    init(remoteDataSource: HomeRepositoryProtocol = RemoteHomeDataSource(requestHandler: RequestFactory(url: Constants.productsApiURL))) {
         self.remoteDataSource = remoteDataSource
     }
 

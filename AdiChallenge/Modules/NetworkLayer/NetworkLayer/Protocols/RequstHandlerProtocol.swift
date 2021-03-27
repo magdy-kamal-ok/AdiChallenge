@@ -14,4 +14,5 @@ public protocol RequstHandlerProtocol {
     func getRequestParameters()        -> [String: Any]?
     func getRequestEncoding()          -> RequestEncoding
     func setRequestParameters(params: [String: Any]?)
+    func getAutoRetryCount() -> Int
 }

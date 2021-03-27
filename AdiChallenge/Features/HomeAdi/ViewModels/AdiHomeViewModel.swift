@@ -8,31 +8,32 @@
 import Foundation
 
 class AdiHomeViewModel {
+    
     struct State {
         let isLoading: Binder<Bool, Void>
         let reloadData: Binder<Void, Void>
+        let showAlert: Binder<AdiAlertModel, Void>
     }
 
     private let homeRepository: HomeRepositoryProtocol
     private weak var coordinator: MainScreenCoordinator?
-
-    private var products: [Product] = []
+    private var allAvailableProducts: [Product] = []
+    
     var searchText: String = "" {
         didSet {
             state.reloadData(())
         }
     }
     
-    var homeProducts: [HomeProductModel] {
+    var products: [ProductPresentationModel] {
         get {
             if searchText.isEmpty {
-                return products.map { HomeProductModel(id: $0.id, name: $0.name, image: $0.imgURL, price: "\($0.price)" + $0.currency, description: $0.productDescription) }
+                return allAvailableProducts.map { ProductPresentationModel.init(product: $0) }
             } else {
-                return products.filter { $0.name.lowercased().contains(searchText.lowercased()) || $0.productDescription.lowercased().contains(searchText.lowercased())}.map { HomeProductModel(id: $0.id, name: $0.name, image: $0.imgURL, price: "\($0.price)" + $0.currency, description: $0.productDescription) }
+                return allAvailableProducts.filter { $0.name.lowercased().contains(searchText.lowercased()) || $0.productDescription.lowercased().contains(searchText.lowercased())}.map { ProductPresentationModel(product: $0) }
             }
         }
     }
-    
     
     var state: State
     
@@ -42,7 +43,7 @@ class AdiHomeViewModel {
     init(homeRepository: HomeRepositoryProtocol, coordinator: Coordinator) {
         self.coordinator = coordinator as? MainScreenCoordinator
         self.homeRepository = homeRepository
-        state = State(isLoading: Binder(), reloadData: Binder())
+        state = State(isLoading: Binder(), reloadData: Binder(), showAlert: Binder())
     }
     
     func cancelDatatRequest() {
@@ -56,9 +57,9 @@ class AdiHomeViewModel {
             defer { self.state.isLoading(false);  self.state.reloadData(()) }
             switch result {
             case .success(let products):
-                self.products = products
+                self.allAvailableProducts = products
             case .failure(let error):
-                break
+                self.state.showAlert(AdiAlertModel(title: "error".localized, message: error.message))
             }
         }
     }
@@ -68,6 +69,9 @@ class AdiHomeViewModel {
     }
     
     public func didSelectItem(at index: Int) {
-        coordinator?.showProductDetails(product: products[index])
+        if let productIndex = allAvailableProducts.indices.first(where: { allAvailableProducts[$0].id == products[index].id && allAvailableProducts[$0].name == products[index].name }) {
+            coordinator?.showProductDetails(product: allAvailableProducts[productIndex])
+        }
+        
     }
 }

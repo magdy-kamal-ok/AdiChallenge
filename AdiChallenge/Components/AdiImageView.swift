@@ -20,7 +20,6 @@ class AdiImageView: UIImageView {
             image = nil
             return
         }
-        
         imageUrlString = urlString
         if let imageFromCache = imageCache.object(forKey: urlString as AnyObject) as? UIImage {
             self.image = imageFromCache
@@ -40,8 +39,7 @@ class AdiImageView: UIImageView {
                     if self.imageUrlString == urlString {
                         self.image = imageToCache
                     }
-                }
-                else {
+                } else {
                     self.image = placeHolderImage
                 }
             })

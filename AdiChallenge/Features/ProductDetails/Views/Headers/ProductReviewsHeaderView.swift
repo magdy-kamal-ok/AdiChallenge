@@ -17,11 +17,15 @@ class ProductReviewsHeaderView: UITableViewHeaderFooterView {
     let didPressAddNewReview = Binder<Void, Void>()
     
     override init(reuseIdentifier: String?) {
-          super.init(reuseIdentifier: reuseIdentifier)
+        super.init(reuseIdentifier: reuseIdentifier)
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+    }
+    
+    private func setupViews() {
+        reviewsLabel.text = "reviews".localized
     }
     
     @IBAction func didPressAddNewReview(_ sender: UIButton) {

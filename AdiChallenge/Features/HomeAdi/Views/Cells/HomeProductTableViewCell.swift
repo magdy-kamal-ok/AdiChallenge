@@ -14,13 +14,12 @@ class HomeProductTableViewCell: UITableViewCell {
     @IBOutlet weak var productPriceLabel: UILabel!
     @IBOutlet weak var productImageView: AdiImageView!
 
-    var homeProduct: HomeProductModel! {
+    var productInfo: ProductPresentationModel! {
         didSet {
-            productDescLabel.text = homeProduct.description
-            productNameLabel.text = homeProduct.name
-            productPriceLabel.text = homeProduct.price
-            productImageView.loadImageUsingUrlString(urlString: homeProduct.image, placeHolderImage: nil)
-
+            productDescLabel.text = productInfo.description
+            productNameLabel.text = productInfo.name
+            productPriceLabel.text = productInfo.price
+            productImageView.loadImageUsingUrlString(urlString: productInfo.image, placeHolderImage: UIImage(named: "ic-placeholder"))
         }
     }
     

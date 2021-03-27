@@ -10,6 +10,7 @@ import UIKit
 class ProductDetailsViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var activityLoadingIndicator: UIActivityIndicatorView!
     private var productDetailsHeaderView: ProductDetailsHeaderView?
     
     private let viewModel: ProductDetailsViewModel
@@ -27,28 +28,68 @@ class ProductDetailsViewController: UIViewController {
         setupViews()
     }
     
+    deinit {
+        print("deinit called")
+    }
+    
     private func setupViews() {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.sectionHeaderHeight = UITableView.automaticDimension
         tableView.estimatedSectionHeaderHeight = 25
-        tableView.registerCellNib(cellClass: HomeProductTableViewCell.self)
+        tableView.registerCellNib(cellClass: ProductReviewTableViewCell.self)
         tableView.registerHeaderNib(headerClass: ProductDetailsHeaderView.self)
         tableView.registerHeaderNib(headerClass: ProductReviewsHeaderView.self)
-
+        viewModel.state.showAddNewReview.bind(on: self) { (self, _) in
+            DispatchQueue.main.async {
+                self.showAlert()
+            }
+        }
+        
+        viewModel.state.reloadData.bind(on: self) { (self, _) in
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        }
+        
+        viewModel.state.isLoading.bind(on: self) { (self, isLoading) in
+            DispatchQueue.main.async {
+                if isLoading {
+                    self.activityLoadingIndicator.startAnimating()
+                } else {
+                    self.activityLoadingIndicator.stopAnimating()
+                }
+            }
+        }
+        
+        viewModel.state.showAlert.bind(on: self) { (self, adiAlertModel) in
+            DispatchQueue.main.async {
+                self.showAlertOk(title: adiAlertModel.title, message: adiAlertModel.message)
+            }
+        }
     }
     
     private func showAlert() {
-        let alert = UIAlertController(title: "Start Chat with Comma Separated user id", message: "", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Confirm", style: .default, handler: { _ in
-            guard let userIds = alert.textFields?.first?.text else { return }
-            let separatedUserIds = userIds.split(separator: ",").map(String.init)
-            
+        let alertController = UIAlertController(title: "", message: "", preferredStyle: .alert)
+        let reviewView = ReviewView()
+        reviewView.translatesAutoresizingMaskIntoConstraints = false
+        alertController.view.addSubview(reviewView)
+        reviewView.translatesAutoresizingMaskIntoConstraints = false
+        reviewView.topAnchor.constraint(equalTo: alertController.view.topAnchor).isActive = true
+        reviewView.leadingAnchor.constraint(equalTo: alertController.view.leadingAnchor).isActive = true
+        reviewView.trailingAnchor.constraint(equalTo: alertController.view.trailingAnchor).isActive = true
+        reviewView.heightAnchor.constraint(equalToConstant: 200).isActive = true
+
+            alertController.view.translatesAutoresizingMaskIntoConstraints = false
+            alertController.view.heightAnchor.constraint(equalToConstant: 250).isActive = true
+        alertController.addAction(UIAlertAction(title: "submit".localized, style: .default, handler: { [weak self] _ in
+            guard let self = self else { return }
+            self.viewModel.didPressSubmitReview(text: reviewView.reviewText, rating: reviewView.ratingValue)
             
         }))
-        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
-        alert.addTextField(configurationHandler: nil)
-        present(alert, animated: true, completion: nil)
+        alertController.hideKeyboardWhenTappedAround()
+        alertController.addAction(UIAlertAction(title: "cancel".localized, style: .cancel, handler: nil))
+        present(alertController, animated: true, completion: nil)
     }
 }
 
@@ -60,14 +101,12 @@ extension ProductDetailsViewController: UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return section == 1 ? 10 : 0
+        return section == 1 ? viewModel.productReviews.count : 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeue() as HomeProductTableViewCell
-        cell.productDescLabel.text = "viewModel.products[indexPath.row].productDescription"
-        cell.productNameLabel.text = "viewModel.products[indexPath.row].name"
-        cell.productPriceLabel.text = "(viewModel.products[indexPath.row].price)"
+        let cell = tableView.dequeue() as ProductReviewTableViewCell
+        cell.productReview = viewModel.productReviews[indexPath.row]
         return cell
     }
     
@@ -75,17 +114,12 @@ extension ProductDetailsViewController: UITableViewDelegate, UITableViewDataSour
         if section == 0 {
             let headerView = tableView.dequeueHeader() as ProductDetailsHeaderView
             productDetailsHeaderView = headerView
-            headerView.productDescLabel.text = viewModel.product.productDescription
-            headerView.productNameLabel.text = viewModel.product.name
-            headerView.productPriceLabel.text = "\(viewModel.product.price)"
-            headerView.productImageView.loadImageUsingUrlString(urlString: viewModel.product.imgURL, placeHolderImage: nil)
+            headerView.productInfo = viewModel.productInfo
             return headerView
         } else if section == 1 {
             let headerView = tableView.dequeueHeader() as ProductReviewsHeaderView
             headerView.didPressAddNewReview.bind(on: self) { (self, _) in
-                DispatchQueue.main.async {
-                    self.showAlert()
-                }
+                self.viewModel.didPressAddNewReview()
             }
             return headerView
         } else {
@@ -121,8 +155,5 @@ extension ProductDetailsViewController: ZoomTransitionDelegate {
         didCompleteTransition didComplete: Bool,
         animatingSourceImageView imageView: UIImageView) {
         productDetailsHeaderView?.productImageView.image = imageView.image
-        productDetailsHeaderView?.productNameLabel.text = viewModel.product.name
-        productDetailsHeaderView?.productPriceLabel.text = "\(viewModel.product.price)"
-        productDetailsHeaderView?.productDescLabel.text = viewModel.product.productDescription
     }
 }

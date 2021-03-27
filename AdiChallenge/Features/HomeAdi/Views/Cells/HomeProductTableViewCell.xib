@@ -18,29 +18,33 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JFT-cA-C24" customClass="AdiImageView" customModule="AdiChallenge" customModuleProvider="target">
-                        <rect key="frame" x="8" y="8" width="190" height="169"/>
+                        <rect key="frame" x="8" y="52.5" width="120" height="80"/>
+                        <accessibility key="accessibilityConfiguration" identifier="AdiProductInfoImageIdentifier"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="190" id="4qk-zH-HJo"/>
-                            <constraint firstAttribute="width" secondItem="JFT-cA-C24" secondAttribute="height" multiplier="190:169" id="qsm-8E-Uc3"/>
+                            <constraint firstAttribute="width" constant="120" id="4qk-zH-HJo"/>
+                            <constraint firstAttribute="width" secondItem="JFT-cA-C24" secondAttribute="height" multiplier="3/2" id="qsm-8E-Uc3"/>
                         </constraints>
                     </imageView>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="N6d-Uj-KaY">
-                        <rect key="frame" x="206" y="8" width="235" height="169"/>
+                        <rect key="frame" x="136" y="8" width="305" height="169"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SCB-Jg-lPO" userLabel="nameLabel">
-                                <rect key="frame" x="0.0" y="0.0" width="235" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SCB-Jg-lPO" userLabel="nameLabel">
+                                <rect key="frame" x="0.0" y="0.0" width="305" height="50"/>
+                                <accessibility key="accessibilityConfiguration" identifier="AdiProductInfoNameLabelIdentifier"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QMV-ju-hEL" userLabel="descLabel">
-                                <rect key="frame" x="0.0" y="20.5" width="235" height="128"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QMV-ju-hEL" userLabel="descLabel">
+                                <rect key="frame" x="0.0" y="50" width="305" height="69"/>
+                                <accessibility key="accessibilityConfiguration" identifier="AdiProductInfoDescriptionLabelIdentifier"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jrh-cP-Nql" userLabel="priceLabel">
-                                <rect key="frame" x="0.0" y="148.5" width="235" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jrh-cP-Nql" userLabel="priceLabel">
+                                <rect key="frame" x="0.0" y="119" width="305" height="50"/>
+                                <accessibility key="accessibilityConfiguration" identifier="AdiProductInfoPriceLabelIdentifier"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -51,10 +55,10 @@
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="N6d-Uj-KaY" secondAttribute="bottom" constant="8" id="8e0-wq-ifj"/>
                     <constraint firstItem="N6d-Uj-KaY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="EWW-Ld-2i2"/>
-                    <constraint firstAttribute="bottom" secondItem="JFT-cA-C24" secondAttribute="bottom" constant="8" id="JIv-iG-fFt"/>
-                    <constraint firstItem="JFT-cA-C24" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="JrB-RC-EQd"/>
+                    <constraint firstAttribute="bottom" secondItem="JFT-cA-C24" secondAttribute="bottom" priority="750" constant="24" id="Ebw-b0-bJt"/>
                     <constraint firstAttribute="trailing" secondItem="N6d-Uj-KaY" secondAttribute="trailing" constant="8" id="PwR-mD-uJ6"/>
                     <constraint firstItem="N6d-Uj-KaY" firstAttribute="leading" secondItem="JFT-cA-C24" secondAttribute="trailing" constant="8" id="axg-HT-eI8"/>
+                    <constraint firstItem="JFT-cA-C24" firstAttribute="centerY" secondItem="N6d-Uj-KaY" secondAttribute="centerY" id="dqp-Uo-9i3"/>
                     <constraint firstItem="JFT-cA-C24" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="sVI-Ua-kYk"/>
                 </constraints>
             </tableViewCellContentView>

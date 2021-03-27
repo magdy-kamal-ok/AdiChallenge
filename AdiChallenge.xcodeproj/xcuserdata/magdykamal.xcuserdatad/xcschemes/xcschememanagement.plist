@@ -7,7 +7,25 @@
 		<key>AdiChallenge.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>5</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>01A8FAF0260CF867000CE4FB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>01A8FB06260CF869000CE4FB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>01A8FB11260CF869000CE4FB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

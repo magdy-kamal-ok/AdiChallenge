@@ -13,7 +13,7 @@ public class Product: Codable {
     let price: Int
     let id, name, productDescription: String
     let imgURL: String
-    let reviews: [Review]
+    var reviews: [Review]
 
     enum CodingKeys: String, CodingKey {
         case currency, price, id, name
@@ -34,7 +34,7 @@ public class Product: Codable {
 }
 
 // MARK: - Review
-class Review: Codable {
+struct Review: Codable {
     let productID, locale: String
     let rating: Int
     let text: String
@@ -44,10 +44,10 @@ class Review: Codable {
         case locale, rating, text
     }
 
-    init(productID: String, locale: String, rating: Int, text: String) {
-        self.productID = productID
-        self.locale = locale
-        self.rating = rating
-        self.text = text
-    }
+//    init(productID: String, locale: String, rating: Int, text: String) {
+//        self.productID = productID
+//        self.locale = locale
+//        self.rating = rating
+//        self.text = text
+//    }
 }
