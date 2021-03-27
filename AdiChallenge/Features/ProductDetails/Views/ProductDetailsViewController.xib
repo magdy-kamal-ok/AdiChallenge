@@ -11,7 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProductDetailsViewController" customModule="AdiChallenge" customModuleProvider="target">
             <connections>
-                <outlet property="activityLoadingIndicator" destination="qeB-Xl-HEo" id="sG4-y5-5Rd"/>
+                <outlet property="activityLoadingIndicator" destination="6Jc-76-u63" id="AcO-hI-mhn"/>
                 <outlet property="tableView" destination="SrU-mc-hAu" id="jSf-hZ-otE"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -25,18 +25,17 @@
                     <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
-                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" id="qeB-Xl-HEo">
-                    <rect key="frame" x="197" y="438" width="20" height="20"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="6Jc-76-u63">
+                    <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
                     <color key="color" systemColor="linkColor"/>
                 </activityIndicatorView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="qeB-Xl-HEo" firstAttribute="centerX" secondItem="SrU-mc-hAu" secondAttribute="centerX" id="348-qn-lpk"/>
-                <constraint firstItem="SrU-mc-hAu" firstAttribute="centerY" secondItem="qeB-Xl-HEo" secondAttribute="centerY" constant="5" id="ExB-9f-wgb"/>
+                <constraint firstItem="6Jc-76-u63" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="0GC-ro-07t"/>
                 <constraint firstItem="SrU-mc-hAu" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="LWk-rg-yOl"/>
+                <constraint firstItem="6Jc-76-u63" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Qgw-d1-R2b"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="SrU-mc-hAu" secondAttribute="bottom" id="US9-1Q-PNE"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="SrU-mc-hAu" secondAttribute="trailing" id="XyJ-Mf-AnP"/>
                 <constraint firstItem="SrU-mc-hAu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="b2o-b3-KeH"/>

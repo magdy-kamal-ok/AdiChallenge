@@ -11,7 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AdiHomeViewController" customModule="AdiChallenge" customModuleProvider="target">
             <connections>
-                <outlet property="activityLoadingIndicator" destination="1AU-cw-lWe" id="sNM-f4-tcZ"/>
+                <outlet property="activityLoadingIndicator" destination="eK3-Ya-swr" id="aB2-2M-eWB"/>
                 <outlet property="tableView" destination="dxJ-qP-Fz9" id="EbG-YO-IkQ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -25,9 +25,8 @@
                     <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
-                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" id="1AU-cw-lWe">
-                    <rect key="frame" x="197" y="438" width="20" height="20"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="eK3-Ya-swr">
+                    <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
                     <color key="color" systemColor="linkColor"/>
                 </activityIndicatorView>
             </subviews>
@@ -35,11 +34,11 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="dxJ-qP-Fz9" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="11M-88-ks6"/>
-                <constraint firstItem="1AU-cw-lWe" firstAttribute="centerX" secondItem="dxJ-qP-Fz9" secondAttribute="centerX" id="HYp-2t-m7i"/>
+                <constraint firstItem="eK3-Ya-swr" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="9qv-4x-Srs"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dxJ-qP-Fz9" secondAttribute="trailing" id="KJB-1T-6ZW"/>
-                <constraint firstItem="dxJ-qP-Fz9" firstAttribute="centerY" secondItem="1AU-cw-lWe" secondAttribute="centerY" constant="5" id="ckp-o9-GAh"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="dxJ-qP-Fz9" secondAttribute="bottom" id="ghH-rW-Emp"/>
                 <constraint firstItem="dxJ-qP-Fz9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="oNB-t7-43m"/>
+                <constraint firstItem="eK3-Ya-swr" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="p6d-vy-JaL"/>
             </constraints>
             <point key="canvasLocation" x="-90" y="90"/>
         </view>

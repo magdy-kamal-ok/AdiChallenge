@@ -13,7 +13,6 @@ class ProductReviewsHeaderView: UITableViewHeaderFooterView {
     @IBOutlet weak var addNewReview: UIButton!
 
     static let reuseIdentifier: String = String(describing: self)
-    private var hasBeenUpdated: Bool = false
     let didPressAddNewReview = Binder<Void, Void>()
     
     override init(reuseIdentifier: String?) {

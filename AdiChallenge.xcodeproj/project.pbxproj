@@ -15,10 +15,18 @@
 		01978383260E79C600B2FE85 /* String+localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01978382260E79C600B2FE85 /* String+localized.swift */; };
 		01978389260E7FD300B2FE85 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01978388260E7FD300B2FE85 /* UIViewController+Alert.swift */; };
 		01978398260EB40D00B2FE85 /* AdiChallengeProductDetailsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01978397260EB40D00B2FE85 /* AdiChallengeProductDetailsUITests.swift */; };
+		01A121B0260F813500D5AC7D /* MockedHomeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A121AF260F813500D5AC7D /* MockedHomeRepository.swift */; };
+		01A121B8260F848100D5AC7D /* MockedRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A121B7260F848100D5AC7D /* MockedRequestFactory.swift */; };
+		01A121BF260F864000D5AC7D /* ValidAdiProducts.json in Resources */ = {isa = PBXBuildFile; fileRef = 01A121BE260F864000D5AC7D /* ValidAdiProducts.json */; };
+		01A121C6260F8C6700D5AC7D /* InvalidAdiProducts.json in Resources */ = {isa = PBXBuildFile; fileRef = 01A121C5260F8C6700D5AC7D /* InvalidAdiProducts.json */; };
+		01A121D4260F99AA00D5AC7D /* ValidPostReviewResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 01A121D3260F99AA00D5AC7D /* ValidPostReviewResponse.json */; };
+		01A121DA260F99DB00D5AC7D /* InvalidPostReviewResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 01A121D9260F99DB00D5AC7D /* InvalidPostReviewResponse.json */; };
+		01A121DE260F9A3E00D5AC7D /* MockedPostReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A121DD260F9A3E00D5AC7D /* MockedPostReview.swift */; };
+		01A121E2260F9ABD00D5AC7D /* AdiProductDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A121E1260F9ABD00D5AC7D /* AdiProductDetailsViewModelTests.swift */; };
 		01A8FAF5260CF867000CE4FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FAF4260CF867000CE4FB /* AppDelegate.swift */; };
 		01A8FAFE260CF868000CE4FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01A8FAFD260CF868000CE4FB /* Assets.xcassets */; };
 		01A8FB01260CF868000CE4FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01A8FAFF260CF868000CE4FB /* LaunchScreen.storyboard */; };
-		01A8FB0C260CF869000CE4FB /* AdiChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FB0B260CF869000CE4FB /* AdiChallengeTests.swift */; };
+		01A8FB0C260CF869000CE4FB /* AdiChallengeHomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FB0B260CF869000CE4FB /* AdiChallengeHomeViewModelTests.swift */; };
 		01A8FB17260CF869000CE4FB /* AdiChallengeHomeScreenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FB16260CF869000CE4FB /* AdiChallengeHomeScreenUITests.swift */; };
 		01A8FB53260CFBBB000CE4FB /* NetworkLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01A8FB4A260CFBA9000CE4FB /* NetworkLayer.framework */; };
 		01A8FB54260CFBBB000CE4FB /* NetworkLayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 01A8FB4A260CFBA9000CE4FB /* NetworkLayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -113,13 +121,21 @@
 		01978382260E79C600B2FE85 /* String+localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+localized.swift"; sourceTree = "<group>"; };
 		01978388260E7FD300B2FE85 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
 		01978397260EB40D00B2FE85 /* AdiChallengeProductDetailsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdiChallengeProductDetailsUITests.swift; sourceTree = "<group>"; };
+		01A121AF260F813500D5AC7D /* MockedHomeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedHomeRepository.swift; sourceTree = "<group>"; };
+		01A121B7260F848100D5AC7D /* MockedRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedRequestFactory.swift; sourceTree = "<group>"; };
+		01A121BE260F864000D5AC7D /* ValidAdiProducts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ValidAdiProducts.json; sourceTree = "<group>"; };
+		01A121C5260F8C6700D5AC7D /* InvalidAdiProducts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = InvalidAdiProducts.json; sourceTree = "<group>"; };
+		01A121D3260F99AA00D5AC7D /* ValidPostReviewResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ValidPostReviewResponse.json; sourceTree = "<group>"; };
+		01A121D9260F99DB00D5AC7D /* InvalidPostReviewResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = InvalidPostReviewResponse.json; sourceTree = "<group>"; };
+		01A121DD260F9A3E00D5AC7D /* MockedPostReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedPostReview.swift; sourceTree = "<group>"; };
+		01A121E1260F9ABD00D5AC7D /* AdiProductDetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdiProductDetailsViewModelTests.swift; sourceTree = "<group>"; };
 		01A8FAF1260CF867000CE4FB /* AdiChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdiChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01A8FAF4260CF867000CE4FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01A8FAFD260CF868000CE4FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01A8FB00260CF868000CE4FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		01A8FB02260CF868000CE4FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01A8FB07260CF869000CE4FB /* AdiChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdiChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		01A8FB0B260CF869000CE4FB /* AdiChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdiChallengeTests.swift; sourceTree = "<group>"; };
+		01A8FB0B260CF869000CE4FB /* AdiChallengeHomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdiChallengeHomeViewModelTests.swift; sourceTree = "<group>"; };
 		01A8FB0D260CF869000CE4FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01A8FB12260CF869000CE4FB /* AdiChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdiChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01A8FB16260CF869000CE4FB /* AdiChallengeHomeScreenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdiChallengeHomeScreenUITests.swift; sourceTree = "<group>"; };
@@ -214,6 +230,27 @@
 			path = PostReview;
 			sourceTree = "<group>";
 		};
+		01A121AA260F80ED00D5AC7D /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				01A121AF260F813500D5AC7D /* MockedHomeRepository.swift */,
+				01A121B7260F848100D5AC7D /* MockedRequestFactory.swift */,
+				01A121DD260F9A3E00D5AC7D /* MockedPostReview.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		01A121AD260F80F700D5AC7D /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				01A121BE260F864000D5AC7D /* ValidAdiProducts.json */,
+				01A121C5260F8C6700D5AC7D /* InvalidAdiProducts.json */,
+				01A121D3260F99AA00D5AC7D /* ValidPostReviewResponse.json */,
+				01A121D9260F99DB00D5AC7D /* InvalidPostReviewResponse.json */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
 		01A8FAE8260CF866000CE4FB = {
 			isa = PBXGroup;
 			children = (
@@ -257,7 +294,10 @@
 		01A8FB0A260CF869000CE4FB /* AdiChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
-				01A8FB0B260CF869000CE4FB /* AdiChallengeTests.swift */,
+				01A121AD260F80F700D5AC7D /* Stubs */,
+				01A121AA260F80ED00D5AC7D /* Mocks */,
+				01A8FB0B260CF869000CE4FB /* AdiChallengeHomeViewModelTests.swift */,
+				01A121E1260F9ABD00D5AC7D /* AdiProductDetailsViewModelTests.swift */,
 				01A8FB0D260CF869000CE4FB /* Info.plist */,
 			);
 			path = AdiChallengeTests;
@@ -646,6 +686,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01A121DA260F99DB00D5AC7D /* InvalidPostReviewResponse.json in Resources */,
+				01A121C6260F8C6700D5AC7D /* InvalidAdiProducts.json in Resources */,
+				01A121D4260F99AA00D5AC7D /* ValidPostReviewResponse.json in Resources */,
+				01A121BF260F864000D5AC7D /* ValidAdiProducts.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -805,7 +849,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01A8FB0C260CF869000CE4FB /* AdiChallengeTests.swift in Sources */,
+				01A121DE260F9A3E00D5AC7D /* MockedPostReview.swift in Sources */,
+				01A8FB0C260CF869000CE4FB /* AdiChallengeHomeViewModelTests.swift in Sources */,
+				01A121E2260F9ABD00D5AC7D /* AdiProductDetailsViewModelTests.swift in Sources */,
+				01A121B8260F848100D5AC7D /* MockedRequestFactory.swift in Sources */,
+				01A121B0260F813500D5AC7D /* MockedHomeRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

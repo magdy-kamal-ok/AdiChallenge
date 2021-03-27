@@ -40,7 +40,7 @@ class AdiHomeViewModel {
     //
     // MARK: Initializer
     //
-    init(homeRepository: HomeRepositoryProtocol, coordinator: Coordinator) {
+    init(homeRepository: HomeRepositoryProtocol, coordinator: Coordinator?) {
         self.coordinator = coordinator as? MainScreenCoordinator
         self.homeRepository = homeRepository
         state = State(isLoading: Binder(), reloadData: Binder(), showAlert: Binder())

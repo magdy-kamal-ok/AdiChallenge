@@ -36,7 +36,7 @@ class ProductDetailsViewModel {
     //
     // MARK: Initializer
     //
-    init(product: Product, coordinator: Coordinator, postReview: PostReviewProtocol) {
+    init(product: Product, coordinator: Coordinator?, postReview: PostReviewProtocol) {
         self.postReview = postReview
         self.coordinator = coordinator as? ProductDetailsCoordinator
         self.product = product
