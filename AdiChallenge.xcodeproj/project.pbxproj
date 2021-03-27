@@ -25,6 +25,100 @@
 		01A121E2260F9ABD00D5AC7D /* AdiProductDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A121E1260F9ABD00D5AC7D /* AdiProductDetailsViewModelTests.swift */; };
 		01A121FB260FD1AC00D5AC7D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 01A121F8260FD1AC00D5AC7D /* GoogleService-Info.plist */; };
 		01A12220260FE5BE00D5AC7D /* CrashlyticsLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A1221F260FE5BE00D5AC7D /* CrashlyticsLogger.swift */; };
+		01A12237260FEF7B00D5AC7D /* ProductDetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FBA2260D02CD000CE4FB /* ProductDetailsCoordinator.swift */; };
+		01A12238260FEF7B00D5AC7D /* AdiNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FBA6260D0326000CE4FB /* AdiNavigationBar.swift */; };
+		01A12239260FEF7B00D5AC7D /* MainScreenBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FBB0260D0531000CE4FB /* MainScreenBuilder.swift */; };
+		01A1223A260FEF7B00D5AC7D /* UIViewController+KeyboardDismiss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01978362260E39C500B2FE85 /* UIViewController+KeyboardDismiss.swift */; };
+		01A1223B260FEF7B00D5AC7D /* ProductDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FC33260D3743000CE4FB /* ProductDetailsViewController.swift */; };
+		01A1223C260FEF7B00D5AC7D /* Binder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FBEA260D1AD9000CE4FB /* Binder.swift */; };
+		01A1223D260FEF7B00D5AC7D /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FB80260D01A4000CE4FB /* Coordinator.swift */; };
+		01A1223E260FEF7B00D5AC7D /* UITableView+Register..swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FC08260D2832000CE4FB /* UITableView+Register..swift */; };
+		01A1223F260FEF7B00D5AC7D /* ZoomTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FC50260D438A000CE4FB /* ZoomTransitionAnimator.swift */; };
+		01A12240260FEF7B00D5AC7D /* AdiHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FBE6260D12A5000CE4FB /* AdiHomeViewModel.swift */; };
+		01A12241260FEF7B00D5AC7D /* RequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FC24260D2EB3000CE4FB /* RequestFactory.swift */; };
+		01A12242260FEF7B00D5AC7D /* ZoomTransitionAnimating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FC4A260D4380000CE4FB /* ZoomTransitionAnimating.swift */; };
+		01A12243260FEF7B00D5AC7D /* ProductDetailsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FC3D260D3C7A000CE4FB /* ProductDetailsHeaderView.swift */; };
+		01A12244260FEF7B00D5AC7D /* MainScreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FB9C260D0282000CE4FB /* MainScreenCoordinator.swift */; };
+		01A12245260FEF7B00D5AC7D /* ProductReviewsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FC62260D516D000CE4FB /* ProductReviewsHeaderView.swift */; };
+		01A12246260FEF7B00D5AC7D /* ProductReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FC6D260D62D5000CE4FB /* ProductReviewTableViewCell.swift */; };
+		01A12247260FEF7B00D5AC7D /* AdiImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FBD5260D0EAE000CE4FB /* AdiImageView.swift */; };
+		01A12248260FEF7B00D5AC7D /* ProductPresentationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FC7A260D726C000CE4FB /* ProductPresentationModel.swift */; };
+		01A12249260FEF7B00D5AC7D /* ProductDetailsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FBB9260D05CA000CE4FB /* ProductDetailsBuilder.swift */; };
+		01A1224A260FEF7B00D5AC7D /* ProductDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FC76260D644B000CE4FB /* ProductDetailsViewModel.swift */; };
+		01A1224B260FEF7B00D5AC7D /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FBEF260D2297000CE4FB /* Product.swift */; };
+		01A1224C260FEF7B00D5AC7D /* ReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01978327260E099000B2FE85 /* ReviewView.swift */; };
+		01A1224D260FEF7B00D5AC7D /* HomeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FC20260D2DCC000CE4FB /* HomeRepository.swift */; };
+		01A1224E260FEF7B00D5AC7D /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01978388260E7FD300B2FE85 /* UIViewController+Alert.swift */; };
+		01A1224F260FEF7B00D5AC7D /* HomeProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FC01260D2613000CE4FB /* HomeProductTableViewCell.swift */; };
+		01A12250260FEF7B00D5AC7D /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FB87260D01E0000CE4FB /* AppCoordinator.swift */; };
+		01A12251260FEF7B00D5AC7D /* String+localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01978382260E79C600B2FE85 /* String+localized.swift */; };
+		01A12252260FEF7B00D5AC7D /* PostReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01978367260E3BE200B2FE85 /* PostReview.swift */; };
+		01A12253260FEF7B00D5AC7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FAF4260CF867000CE4FB /* AppDelegate.swift */; };
+		01A12254260FEF7B00D5AC7D /* AdiHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FBDE260D1251000CE4FB /* AdiHomeViewController.swift */; };
+		01A12255260FEF7B00D5AC7D /* RemoteHomeDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FC29260D2F04000CE4FB /* RemoteHomeDataSource.swift */; };
+		01A12256260FEF7B00D5AC7D /* CrashlyticsLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A1221F260FE5BE00D5AC7D /* CrashlyticsLogger.swift */; };
+		01A12257260FEF7B00D5AC7D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FBC2260D07EA000CE4FB /* Constants.swift */; };
+		01A12259260FEF7B00D5AC7D /* NetworkLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01A8FB4A260CFBA9000CE4FB /* NetworkLayer.framework */; };
+		01A1225A260FEF7B00D5AC7D /* Pods_AdiChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2152897293CE218866D4D3EE /* Pods_AdiChallenge.framework */; };
+		01A1225C260FEF7B00D5AC7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01A8FAFF260CF868000CE4FB /* LaunchScreen.storyboard */; };
+		01A1225D260FEF7B00D5AC7D /* AdiHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01A8FBDF260D1251000CE4FB /* AdiHomeViewController.xib */; };
+		01A1225E260FEF7B00D5AC7D /* ProductReviewsHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01A8FC5C260D515F000CE4FB /* ProductReviewsHeaderView.xib */; };
+		01A1225F260FEF7B00D5AC7D /* ReviewView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01978323260E097C00B2FE85 /* ReviewView.xib */; };
+		01A12260260FEF7B00D5AC7D /* ProductDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01A8FC34260D3743000CE4FB /* ProductDetailsViewController.xib */; };
+		01A12261260FEF7B00D5AC7D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0197837D260E787100B2FE85 /* Localizable.strings */; };
+		01A12262260FEF7B00D5AC7D /* HomeProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01A8FC02260D2613000CE4FB /* HomeProductTableViewCell.xib */; };
+		01A12263260FEF7B00D5AC7D /* ProductReviewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01A8FC6E260D62D5000CE4FB /* ProductReviewTableViewCell.xib */; };
+		01A12265260FEF7B00D5AC7D /* ProductDetailsHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01A8FC43260D3C86000CE4FB /* ProductDetailsHeaderView.xib */; };
+		01A12266260FEF7B00D5AC7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01A8FAFD260CF868000CE4FB /* Assets.xcassets */; };
+		01A12268260FEF7B00D5AC7D /* NetworkLayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 01A8FB4A260CFBA9000CE4FB /* NetworkLayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		01A12274260FEF8D00D5AC7D /* ProductDetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FBA2260D02CD000CE4FB /* ProductDetailsCoordinator.swift */; };
+		01A12275260FEF8D00D5AC7D /* AdiNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FBA6260D0326000CE4FB /* AdiNavigationBar.swift */; };
+		01A12276260FEF8D00D5AC7D /* MainScreenBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FBB0260D0531000CE4FB /* MainScreenBuilder.swift */; };
+		01A12277260FEF8D00D5AC7D /* UIViewController+KeyboardDismiss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01978362260E39C500B2FE85 /* UIViewController+KeyboardDismiss.swift */; };
+		01A12278260FEF8D00D5AC7D /* ProductDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FC33260D3743000CE4FB /* ProductDetailsViewController.swift */; };
+		01A12279260FEF8D00D5AC7D /* Binder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FBEA260D1AD9000CE4FB /* Binder.swift */; };
+		01A1227A260FEF8D00D5AC7D /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FB80260D01A4000CE4FB /* Coordinator.swift */; };
+		01A1227B260FEF8D00D5AC7D /* UITableView+Register..swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FC08260D2832000CE4FB /* UITableView+Register..swift */; };
+		01A1227C260FEF8D00D5AC7D /* ZoomTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FC50260D438A000CE4FB /* ZoomTransitionAnimator.swift */; };
+		01A1227D260FEF8D00D5AC7D /* AdiHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FBE6260D12A5000CE4FB /* AdiHomeViewModel.swift */; };
+		01A1227E260FEF8D00D5AC7D /* RequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FC24260D2EB3000CE4FB /* RequestFactory.swift */; };
+		01A1227F260FEF8D00D5AC7D /* ZoomTransitionAnimating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FC4A260D4380000CE4FB /* ZoomTransitionAnimating.swift */; };
+		01A12280260FEF8D00D5AC7D /* ProductDetailsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FC3D260D3C7A000CE4FB /* ProductDetailsHeaderView.swift */; };
+		01A12281260FEF8D00D5AC7D /* MainScreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FB9C260D0282000CE4FB /* MainScreenCoordinator.swift */; };
+		01A12282260FEF8D00D5AC7D /* ProductReviewsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FC62260D516D000CE4FB /* ProductReviewsHeaderView.swift */; };
+		01A12283260FEF8D00D5AC7D /* ProductReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FC6D260D62D5000CE4FB /* ProductReviewTableViewCell.swift */; };
+		01A12284260FEF8D00D5AC7D /* AdiImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FBD5260D0EAE000CE4FB /* AdiImageView.swift */; };
+		01A12285260FEF8D00D5AC7D /* ProductPresentationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FC7A260D726C000CE4FB /* ProductPresentationModel.swift */; };
+		01A12286260FEF8D00D5AC7D /* ProductDetailsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FBB9260D05CA000CE4FB /* ProductDetailsBuilder.swift */; };
+		01A12287260FEF8D00D5AC7D /* ProductDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FC76260D644B000CE4FB /* ProductDetailsViewModel.swift */; };
+		01A12288260FEF8D00D5AC7D /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FBEF260D2297000CE4FB /* Product.swift */; };
+		01A12289260FEF8D00D5AC7D /* ReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01978327260E099000B2FE85 /* ReviewView.swift */; };
+		01A1228A260FEF8D00D5AC7D /* HomeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FC20260D2DCC000CE4FB /* HomeRepository.swift */; };
+		01A1228B260FEF8D00D5AC7D /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01978388260E7FD300B2FE85 /* UIViewController+Alert.swift */; };
+		01A1228C260FEF8D00D5AC7D /* HomeProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FC01260D2613000CE4FB /* HomeProductTableViewCell.swift */; };
+		01A1228D260FEF8D00D5AC7D /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FB87260D01E0000CE4FB /* AppCoordinator.swift */; };
+		01A1228E260FEF8D00D5AC7D /* String+localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01978382260E79C600B2FE85 /* String+localized.swift */; };
+		01A1228F260FEF8D00D5AC7D /* PostReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01978367260E3BE200B2FE85 /* PostReview.swift */; };
+		01A12290260FEF8D00D5AC7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FAF4260CF867000CE4FB /* AppDelegate.swift */; };
+		01A12291260FEF8D00D5AC7D /* AdiHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FBDE260D1251000CE4FB /* AdiHomeViewController.swift */; };
+		01A12292260FEF8D00D5AC7D /* RemoteHomeDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FC29260D2F04000CE4FB /* RemoteHomeDataSource.swift */; };
+		01A12293260FEF8D00D5AC7D /* CrashlyticsLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A1221F260FE5BE00D5AC7D /* CrashlyticsLogger.swift */; };
+		01A12294260FEF8D00D5AC7D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FBC2260D07EA000CE4FB /* Constants.swift */; };
+		01A12296260FEF8D00D5AC7D /* NetworkLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01A8FB4A260CFBA9000CE4FB /* NetworkLayer.framework */; };
+		01A12297260FEF8D00D5AC7D /* Pods_AdiChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2152897293CE218866D4D3EE /* Pods_AdiChallenge.framework */; };
+		01A12299260FEF8D00D5AC7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01A8FAFF260CF868000CE4FB /* LaunchScreen.storyboard */; };
+		01A1229A260FEF8D00D5AC7D /* AdiHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01A8FBDF260D1251000CE4FB /* AdiHomeViewController.xib */; };
+		01A1229B260FEF8D00D5AC7D /* ProductReviewsHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01A8FC5C260D515F000CE4FB /* ProductReviewsHeaderView.xib */; };
+		01A1229C260FEF8D00D5AC7D /* ReviewView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01978323260E097C00B2FE85 /* ReviewView.xib */; };
+		01A1229D260FEF8D00D5AC7D /* ProductDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01A8FC34260D3743000CE4FB /* ProductDetailsViewController.xib */; };
+		01A1229E260FEF8D00D5AC7D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0197837D260E787100B2FE85 /* Localizable.strings */; };
+		01A1229F260FEF8D00D5AC7D /* HomeProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01A8FC02260D2613000CE4FB /* HomeProductTableViewCell.xib */; };
+		01A122A0260FEF8D00D5AC7D /* ProductReviewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01A8FC6E260D62D5000CE4FB /* ProductReviewTableViewCell.xib */; };
+		01A122A2260FEF8D00D5AC7D /* ProductDetailsHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01A8FC43260D3C86000CE4FB /* ProductDetailsHeaderView.xib */; };
+		01A122A3260FEF8D00D5AC7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01A8FAFD260CF868000CE4FB /* Assets.xcassets */; };
+		01A122A5260FEF8D00D5AC7D /* NetworkLayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 01A8FB4A260CFBA9000CE4FB /* NetworkLayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		01A122C7260FF54D00D5AC7D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 01A122C6260FF54D00D5AC7D /* GoogleService-Info.plist */; };
+		01A122CB260FF58900D5AC7D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 01A122CA260FF58900D5AC7D /* GoogleService-Info.plist */; };
 		01A8FAF5260CF867000CE4FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FAF4260CF867000CE4FB /* AppDelegate.swift */; };
 		01A8FAFE260CF868000CE4FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01A8FAFD260CF868000CE4FB /* Assets.xcassets */; };
 		01A8FB01260CF868000CE4FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01A8FAFF260CF868000CE4FB /* LaunchScreen.storyboard */; };
@@ -101,6 +195,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		01A12267260FEF7B00D5AC7D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				01A12268260FEF7B00D5AC7D /* NetworkLayer.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01A122A4260FEF8D00D5AC7D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				01A122A5260FEF8D00D5AC7D /* NetworkLayer.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		01A8FB55260CFBBB000CE4FB /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -133,6 +249,12 @@
 		01A121E1260F9ABD00D5AC7D /* AdiProductDetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdiProductDetailsViewModelTests.swift; sourceTree = "<group>"; };
 		01A121F8260FD1AC00D5AC7D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		01A1221F260FE5BE00D5AC7D /* CrashlyticsLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrashlyticsLogger.swift; sourceTree = "<group>"; };
+		01A1226D260FEF7B00D5AC7D /* AdiChallenge Staging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AdiChallenge Staging.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		01A122AA260FEF8D00D5AC7D /* AdiChallenge Development.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AdiChallenge Development.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		01A122C0260FF0CC00D5AC7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01A122C1260FF13B00D5AC7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01A122C6260FF54D00D5AC7D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		01A122CA260FF58900D5AC7D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		01A8FAF1260CF867000CE4FB /* AdiChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdiChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01A8FAF4260CF867000CE4FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01A8FAFD260CF868000CE4FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -189,6 +311,24 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		01A12258260FEF7B00D5AC7D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01A12259260FEF7B00D5AC7D /* NetworkLayer.framework in Frameworks */,
+				01A1225A260FEF7B00D5AC7D /* Pods_AdiChallenge.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01A12295260FEF8D00D5AC7D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01A12296260FEF8D00D5AC7D /* NetworkLayer.framework in Frameworks */,
+				01A12297260FEF8D00D5AC7D /* Pods_AdiChallenge.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		01A8FAEE260CF867000CE4FB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -255,6 +395,43 @@
 			path = Stubs;
 			sourceTree = "<group>";
 		};
+		01A1222A260FEEFD00D5AC7D /* Plists */ = {
+			isa = PBXGroup;
+			children = (
+				01A1222F260FEF1A00D5AC7D /* Development */,
+				01A1222E260FEF1100D5AC7D /* Staging */,
+				01A1222D260FEF0400D5AC7D /* Production */,
+			);
+			path = Plists;
+			sourceTree = "<group>";
+		};
+		01A1222D260FEF0400D5AC7D /* Production */ = {
+			isa = PBXGroup;
+			children = (
+				01A121F8260FD1AC00D5AC7D /* GoogleService-Info.plist */,
+				01A8FB02260CF868000CE4FB /* Info.plist */,
+			);
+			path = Production;
+			sourceTree = "<group>";
+		};
+		01A1222E260FEF1100D5AC7D /* Staging */ = {
+			isa = PBXGroup;
+			children = (
+				01A122C6260FF54D00D5AC7D /* GoogleService-Info.plist */,
+				01A122C0260FF0CC00D5AC7D /* Info.plist */,
+			);
+			path = Staging;
+			sourceTree = "<group>";
+		};
+		01A1222F260FEF1A00D5AC7D /* Development */ = {
+			isa = PBXGroup;
+			children = (
+				01A122CA260FF58900D5AC7D /* GoogleService-Info.plist */,
+				01A122C1260FF13B00D5AC7D /* Info.plist */,
+			);
+			path = Development;
+			sourceTree = "<group>";
+		};
 		01A8FAE8260CF866000CE4FB = {
 			isa = PBXGroup;
 			children = (
@@ -273,6 +450,8 @@
 				01A8FAF1260CF867000CE4FB /* AdiChallenge.app */,
 				01A8FB07260CF869000CE4FB /* AdiChallengeTests.xctest */,
 				01A8FB12260CF869000CE4FB /* AdiChallengeUITests.xctest */,
+				01A1226D260FEF7B00D5AC7D /* AdiChallenge Staging.app */,
+				01A122AA260FEF8D00D5AC7D /* AdiChallenge Development.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -280,6 +459,7 @@
 		01A8FAF3260CF867000CE4FB /* AdiChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				01A1222A260FEEFD00D5AC7D /* Plists */,
 				01A8FBAE260D04E9000CE4FB /* Features */,
 				01A8FB7F260D0192000CE4FB /* Coordinator */,
 				01A8FB40260CFAD1000CE4FB /* Utilities+Extensions */,
@@ -290,8 +470,6 @@
 				01A8FAF4260CF867000CE4FB /* AppDelegate.swift */,
 				01A8FAFD260CF868000CE4FB /* Assets.xcassets */,
 				01A8FAFF260CF868000CE4FB /* LaunchScreen.storyboard */,
-				01A121F8260FD1AC00D5AC7D /* GoogleService-Info.plist */,
-				01A8FB02260CF868000CE4FB /* Info.plist */,
 			);
 			path = AdiChallenge;
 			sourceTree = "<group>";
@@ -546,6 +724,46 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		01A12234260FEF7B00D5AC7D /* AdiChallenge Staging */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01A1226A260FEF7B00D5AC7D /* Build configuration list for PBXNativeTarget "AdiChallenge Staging" */;
+			buildPhases = (
+				01A12235260FEF7B00D5AC7D /* [CP] Check Pods Manifest.lock */,
+				01A12236260FEF7B00D5AC7D /* Sources */,
+				01A12258260FEF7B00D5AC7D /* Frameworks */,
+				01A1225B260FEF7B00D5AC7D /* Resources */,
+				01A12267260FEF7B00D5AC7D /* Embed Frameworks */,
+				01A12269260FEF7B00D5AC7D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AdiChallenge Staging";
+			productName = AdiChallenge;
+			productReference = 01A1226D260FEF7B00D5AC7D /* AdiChallenge Staging.app */;
+			productType = "com.apple.product-type.application";
+		};
+		01A12271260FEF8D00D5AC7D /* AdiChallenge Development */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01A122A7260FEF8D00D5AC7D /* Build configuration list for PBXNativeTarget "AdiChallenge Development" */;
+			buildPhases = (
+				01A12272260FEF8D00D5AC7D /* [CP] Check Pods Manifest.lock */,
+				01A12273260FEF8D00D5AC7D /* Sources */,
+				01A12295260FEF8D00D5AC7D /* Frameworks */,
+				01A12298260FEF8D00D5AC7D /* Resources */,
+				01A122A4260FEF8D00D5AC7D /* Embed Frameworks */,
+				01A122A6260FEF8D00D5AC7D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AdiChallenge Development";
+			productName = AdiChallenge;
+			productReference = 01A122AA260FEF8D00D5AC7D /* AdiChallenge Development.app */;
+			productType = "com.apple.product-type.application";
+		};
 		01A8FAF0260CF867000CE4FB /* AdiChallenge */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 01A8FB1B260CF869000CE4FB /* Build configuration list for PBXNativeTarget "AdiChallenge" */;
@@ -649,6 +867,8 @@
 				01A8FAF0260CF867000CE4FB /* AdiChallenge */,
 				01A8FB06260CF869000CE4FB /* AdiChallengeTests */,
 				01A8FB11260CF869000CE4FB /* AdiChallengeUITests */,
+				01A12234260FEF7B00D5AC7D /* AdiChallenge Staging */,
+				01A12271260FEF8D00D5AC7D /* AdiChallenge Development */,
 			);
 		};
 /* End PBXProject section */
@@ -671,6 +891,42 @@
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
+		01A1225B260FEF7B00D5AC7D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01A1225C260FEF7B00D5AC7D /* LaunchScreen.storyboard in Resources */,
+				01A1225D260FEF7B00D5AC7D /* AdiHomeViewController.xib in Resources */,
+				01A1225E260FEF7B00D5AC7D /* ProductReviewsHeaderView.xib in Resources */,
+				01A1225F260FEF7B00D5AC7D /* ReviewView.xib in Resources */,
+				01A12260260FEF7B00D5AC7D /* ProductDetailsViewController.xib in Resources */,
+				01A122C7260FF54D00D5AC7D /* GoogleService-Info.plist in Resources */,
+				01A12261260FEF7B00D5AC7D /* Localizable.strings in Resources */,
+				01A12262260FEF7B00D5AC7D /* HomeProductTableViewCell.xib in Resources */,
+				01A12263260FEF7B00D5AC7D /* ProductReviewTableViewCell.xib in Resources */,
+				01A12265260FEF7B00D5AC7D /* ProductDetailsHeaderView.xib in Resources */,
+				01A12266260FEF7B00D5AC7D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01A12298260FEF8D00D5AC7D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01A12299260FEF8D00D5AC7D /* LaunchScreen.storyboard in Resources */,
+				01A1229A260FEF8D00D5AC7D /* AdiHomeViewController.xib in Resources */,
+				01A1229B260FEF8D00D5AC7D /* ProductReviewsHeaderView.xib in Resources */,
+				01A1229C260FEF8D00D5AC7D /* ReviewView.xib in Resources */,
+				01A1229D260FEF8D00D5AC7D /* ProductDetailsViewController.xib in Resources */,
+				01A122CB260FF58900D5AC7D /* GoogleService-Info.plist in Resources */,
+				01A1229E260FEF8D00D5AC7D /* Localizable.strings in Resources */,
+				01A1229F260FEF8D00D5AC7D /* HomeProductTableViewCell.xib in Resources */,
+				01A122A0260FEF8D00D5AC7D /* ProductReviewTableViewCell.xib in Resources */,
+				01A122A2260FEF8D00D5AC7D /* ProductDetailsHeaderView.xib in Resources */,
+				01A122A3260FEF8D00D5AC7D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		01A8FAEF260CF867000CE4FB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -710,6 +966,84 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		01A12235260FEF7B00D5AC7D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AdiChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		01A12269260FEF7B00D5AC7D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AdiChallenge/Pods-AdiChallenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AdiChallenge/Pods-AdiChallenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AdiChallenge/Pods-AdiChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		01A12272260FEF8D00D5AC7D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AdiChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		01A122A6260FEF8D00D5AC7D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AdiChallenge/Pods-AdiChallenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AdiChallenge/Pods-AdiChallenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AdiChallenge/Pods-AdiChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		0A8B1471D2A81DDDA0B81F4F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -813,6 +1147,86 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		01A12236260FEF7B00D5AC7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01A12237260FEF7B00D5AC7D /* ProductDetailsCoordinator.swift in Sources */,
+				01A12238260FEF7B00D5AC7D /* AdiNavigationBar.swift in Sources */,
+				01A12239260FEF7B00D5AC7D /* MainScreenBuilder.swift in Sources */,
+				01A1223A260FEF7B00D5AC7D /* UIViewController+KeyboardDismiss.swift in Sources */,
+				01A1223B260FEF7B00D5AC7D /* ProductDetailsViewController.swift in Sources */,
+				01A1223C260FEF7B00D5AC7D /* Binder.swift in Sources */,
+				01A1223D260FEF7B00D5AC7D /* Coordinator.swift in Sources */,
+				01A1223E260FEF7B00D5AC7D /* UITableView+Register..swift in Sources */,
+				01A1223F260FEF7B00D5AC7D /* ZoomTransitionAnimator.swift in Sources */,
+				01A12240260FEF7B00D5AC7D /* AdiHomeViewModel.swift in Sources */,
+				01A12241260FEF7B00D5AC7D /* RequestFactory.swift in Sources */,
+				01A12242260FEF7B00D5AC7D /* ZoomTransitionAnimating.swift in Sources */,
+				01A12243260FEF7B00D5AC7D /* ProductDetailsHeaderView.swift in Sources */,
+				01A12244260FEF7B00D5AC7D /* MainScreenCoordinator.swift in Sources */,
+				01A12245260FEF7B00D5AC7D /* ProductReviewsHeaderView.swift in Sources */,
+				01A12246260FEF7B00D5AC7D /* ProductReviewTableViewCell.swift in Sources */,
+				01A12247260FEF7B00D5AC7D /* AdiImageView.swift in Sources */,
+				01A12248260FEF7B00D5AC7D /* ProductPresentationModel.swift in Sources */,
+				01A12249260FEF7B00D5AC7D /* ProductDetailsBuilder.swift in Sources */,
+				01A1224A260FEF7B00D5AC7D /* ProductDetailsViewModel.swift in Sources */,
+				01A1224B260FEF7B00D5AC7D /* Product.swift in Sources */,
+				01A1224C260FEF7B00D5AC7D /* ReviewView.swift in Sources */,
+				01A1224D260FEF7B00D5AC7D /* HomeRepository.swift in Sources */,
+				01A1224E260FEF7B00D5AC7D /* UIViewController+Alert.swift in Sources */,
+				01A1224F260FEF7B00D5AC7D /* HomeProductTableViewCell.swift in Sources */,
+				01A12250260FEF7B00D5AC7D /* AppCoordinator.swift in Sources */,
+				01A12251260FEF7B00D5AC7D /* String+localized.swift in Sources */,
+				01A12252260FEF7B00D5AC7D /* PostReview.swift in Sources */,
+				01A12253260FEF7B00D5AC7D /* AppDelegate.swift in Sources */,
+				01A12254260FEF7B00D5AC7D /* AdiHomeViewController.swift in Sources */,
+				01A12255260FEF7B00D5AC7D /* RemoteHomeDataSource.swift in Sources */,
+				01A12256260FEF7B00D5AC7D /* CrashlyticsLogger.swift in Sources */,
+				01A12257260FEF7B00D5AC7D /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01A12273260FEF8D00D5AC7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01A12274260FEF8D00D5AC7D /* ProductDetailsCoordinator.swift in Sources */,
+				01A12275260FEF8D00D5AC7D /* AdiNavigationBar.swift in Sources */,
+				01A12276260FEF8D00D5AC7D /* MainScreenBuilder.swift in Sources */,
+				01A12277260FEF8D00D5AC7D /* UIViewController+KeyboardDismiss.swift in Sources */,
+				01A12278260FEF8D00D5AC7D /* ProductDetailsViewController.swift in Sources */,
+				01A12279260FEF8D00D5AC7D /* Binder.swift in Sources */,
+				01A1227A260FEF8D00D5AC7D /* Coordinator.swift in Sources */,
+				01A1227B260FEF8D00D5AC7D /* UITableView+Register..swift in Sources */,
+				01A1227C260FEF8D00D5AC7D /* ZoomTransitionAnimator.swift in Sources */,
+				01A1227D260FEF8D00D5AC7D /* AdiHomeViewModel.swift in Sources */,
+				01A1227E260FEF8D00D5AC7D /* RequestFactory.swift in Sources */,
+				01A1227F260FEF8D00D5AC7D /* ZoomTransitionAnimating.swift in Sources */,
+				01A12280260FEF8D00D5AC7D /* ProductDetailsHeaderView.swift in Sources */,
+				01A12281260FEF8D00D5AC7D /* MainScreenCoordinator.swift in Sources */,
+				01A12282260FEF8D00D5AC7D /* ProductReviewsHeaderView.swift in Sources */,
+				01A12283260FEF8D00D5AC7D /* ProductReviewTableViewCell.swift in Sources */,
+				01A12284260FEF8D00D5AC7D /* AdiImageView.swift in Sources */,
+				01A12285260FEF8D00D5AC7D /* ProductPresentationModel.swift in Sources */,
+				01A12286260FEF8D00D5AC7D /* ProductDetailsBuilder.swift in Sources */,
+				01A12287260FEF8D00D5AC7D /* ProductDetailsViewModel.swift in Sources */,
+				01A12288260FEF8D00D5AC7D /* Product.swift in Sources */,
+				01A12289260FEF8D00D5AC7D /* ReviewView.swift in Sources */,
+				01A1228A260FEF8D00D5AC7D /* HomeRepository.swift in Sources */,
+				01A1228B260FEF8D00D5AC7D /* UIViewController+Alert.swift in Sources */,
+				01A1228C260FEF8D00D5AC7D /* HomeProductTableViewCell.swift in Sources */,
+				01A1228D260FEF8D00D5AC7D /* AppCoordinator.swift in Sources */,
+				01A1228E260FEF8D00D5AC7D /* String+localized.swift in Sources */,
+				01A1228F260FEF8D00D5AC7D /* PostReview.swift in Sources */,
+				01A12290260FEF8D00D5AC7D /* AppDelegate.swift in Sources */,
+				01A12291260FEF8D00D5AC7D /* AdiHomeViewController.swift in Sources */,
+				01A12292260FEF8D00D5AC7D /* RemoteHomeDataSource.swift in Sources */,
+				01A12293260FEF8D00D5AC7D /* CrashlyticsLogger.swift in Sources */,
+				01A12294260FEF8D00D5AC7D /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		01A8FAED260CF867000CE4FB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -901,6 +1315,90 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		01A1226B260FEF7B00D5AC7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18C17E1BFB7A62C834F3957C /* Pods-AdiChallenge.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z3D89T937N;
+				INFOPLIST_FILE = AdiChallenge/Plists/Staging/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.AdiChallenge.ios.AdiChallenge.Stage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		01A1226C260FEF7B00D5AC7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69932162E90D3C565424E247 /* Pods-AdiChallenge.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z3D89T937N;
+				INFOPLIST_FILE = AdiChallenge/Plists/Staging/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.AdiChallenge.ios.AdiChallenge.Stage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		01A122A8260FEF8D00D5AC7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18C17E1BFB7A62C834F3957C /* Pods-AdiChallenge.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z3D89T937N;
+				INFOPLIST_FILE = AdiChallenge/Plists/Development/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.AdiChallenge.ios.AdiChallenge.Dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		01A122A9260FEF8D00D5AC7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69932162E90D3C565424E247 /* Pods-AdiChallenge.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z3D89T937N;
+				INFOPLIST_FILE = AdiChallenge/Plists/Development/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.AdiChallenge.ios.AdiChallenge.Dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		01A8FB19260CF869000CE4FB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1025,7 +1523,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z3D89T937N;
-				INFOPLIST_FILE = AdiChallenge/Info.plist;
+				INFOPLIST_FILE = AdiChallenge/Plists/Production/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1046,7 +1544,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z3D89T937N;
-				INFOPLIST_FILE = AdiChallenge/Info.plist;
+				INFOPLIST_FILE = AdiChallenge/Plists/Production/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1150,6 +1648,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		01A1226A260FEF7B00D5AC7D /* Build configuration list for PBXNativeTarget "AdiChallenge Staging" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01A1226B260FEF7B00D5AC7D /* Debug */,
+				01A1226C260FEF7B00D5AC7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01A122A7260FEF8D00D5AC7D /* Build configuration list for PBXNativeTarget "AdiChallenge Development" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01A122A8260FEF8D00D5AC7D /* Debug */,
+				01A122A9260FEF8D00D5AC7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		01A8FAEC260CF867000CE4FB /* Build configuration list for PBXProject "AdiChallenge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -1,0 +1,6 @@
+app_identifier("com.AdiChallenge.ios.AdiChallenge") # The bundle identifier of your app 
+
+
+#apple_id("magdy.kamal@gmail.com") # Your Apple email address
+
+#team_id "Z3D89T937N" # Developer Portal Team ID

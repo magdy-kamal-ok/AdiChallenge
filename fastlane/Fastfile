@@ -1,0 +1,54 @@
+default_platform :ios
+
+platform :ios do
+  # run this lane only once to create your match certificates
+  lane :certificates do
+   match(app_identifier: ["com.AdiChallenge.ios.AdiChallenge.Dev", "com.AdiChallenge.ios.AdiChallenge.Stage", "com.AdiChallenge.ios.AdiChallenge"])
+    match(type: "adhoc", app_identifier: ["com.AdiChallenge.ios.AdiChallenge.Dev", "com.AdiChallenge.ios.AdiChallenge.Stage", "com.AdiChallenge.ios.AdiChallenge"])
+    match(type: "appstore", app_identifier: "com.AdiChallenge.ios.AdiChallenge")
+  end
+
+  
+  desc "Release Test build for Test"
+  lane :staging do
+    ensure_git_status_clean
+    current_build_number = Integer(get_build_number(xcodeproj: "AdiChallenge.xcodeproj"))
+    new_build_number = (current_build_number + 1)
+    increment_build_number(
+      build_number: new_build_number
+      )
+  
+    match(app_identifier: "com.AdiChallenge.ios.AdiChallenge.Stage", type: "adhoc")
+    scan(fail_build=true)
+    gym(export_method: "ad-hoc",export_xcargs: "-allowProvisioningUpdates", scheme: "AdiChallenge Staging", skip_profile_detection: true,
+    export_options: {
+      signingStyle: "manual",
+      provisioningProfiles: {
+        "com.AdiChallenge.ios.AdiChallenge.Stage": "match AdHoc com.AdiChallenge.ios.AdiChallenge.Stage"
+      }
+    })
+  
+     # upload Ipa to firebseDistribution 
+     firebase_app_distribution(
+      app: "1:1082285615166:ios:547effb481247b9f29496f",
+      release_notes: "Lots of amazing new features to test out!", 
+      firebase_cli_token: "add your firebase token here"
+    )
+    clean_build_artifacts
+    git_commit(
+      path: ".",
+      message: "[skip ci] Build number bumped to " + get_build_number + " by Fastlane",
+      )
+    push_to_git_remote
+  end
+
+
+  desc "Deploy a new version to the App Store"
+  lane :production do
+    match(type: "appstore")
+    scan(fail_build=true)
+    gym(export_method: "app-store", export_xcargs: "-allowProvisioningUpdates", scheme: "AdiChallenge")
+    pilot(skip_waiting_for_build_processing: true)
+ end
+
+end

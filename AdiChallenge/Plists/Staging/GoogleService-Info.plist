@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>147708403073-codv0flev0cvhemao2f3rtpobou3vqsv.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.147708403073-codv0flev0cvhemao2f3rtpobou3vqsv</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDPvIgx9XLrOhnomFNF4TLx6kqVmR8JG9w</string>
+	<key>GCM_SENDER_ID</key>
+	<string>147708403073</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.AdiChallenge.ios.AdiChallenge.Stage</string>
+	<key>PROJECT_ID</key>
+	<string>demos-12c83</string>
+	<key>STORAGE_BUCKET</key>
+	<string>demos-12c83.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:147708403073:ios:0101351516dc7471e15c80</string>
+</dict>
+</plist>

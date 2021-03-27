@@ -1,0 +1,13 @@
+git_url("https://github.com/magdy-kamal-ok/AdiChallengeCertificates.git")
+
+storage_mode("git")
+
+type("development") # The default type, can be: appstore, adhoc, enterprise or development
+
+
+app_identifier "com.AdiChallenge.ios.AdiChallenge" 
+app_identifier "com.AdiChallenge.ios.AdiChallenge.Stage" 
+app_identifier "com.AdiChallenge.ios.AdiChallenge.Dev"
+
+# put your apple developer portal here
+# username("Magdy.kamal@gmail.com") # Your Apple Developer Portal username

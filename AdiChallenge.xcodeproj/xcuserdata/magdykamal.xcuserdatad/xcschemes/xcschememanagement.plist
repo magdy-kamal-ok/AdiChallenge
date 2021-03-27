@@ -4,14 +4,29 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>AdiChallenge Development.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>16</integer>
+		</dict>
+		<key>AdiChallenge Staging.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>15</integer>
+		</dict>
 		<key>AdiChallenge.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>5</integer>
+			<integer>1</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>01A12234260FEF7B00D5AC7D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>01A8FAF0260CF867000CE4FB</key>
 		<dict>
 			<key>primary</key>
