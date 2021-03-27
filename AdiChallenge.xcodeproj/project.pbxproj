@@ -59,7 +59,6 @@
 		01A12256260FEF7B00D5AC7D /* CrashlyticsLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A1221F260FE5BE00D5AC7D /* CrashlyticsLogger.swift */; };
 		01A12257260FEF7B00D5AC7D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FBC2260D07EA000CE4FB /* Constants.swift */; };
 		01A12259260FEF7B00D5AC7D /* NetworkLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01A8FB4A260CFBA9000CE4FB /* NetworkLayer.framework */; };
-		01A1225A260FEF7B00D5AC7D /* Pods_AdiChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2152897293CE218866D4D3EE /* Pods_AdiChallenge.framework */; };
 		01A1225C260FEF7B00D5AC7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01A8FAFF260CF868000CE4FB /* LaunchScreen.storyboard */; };
 		01A1225D260FEF7B00D5AC7D /* AdiHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01A8FBDF260D1251000CE4FB /* AdiHomeViewController.xib */; };
 		01A1225E260FEF7B00D5AC7D /* ProductReviewsHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01A8FC5C260D515F000CE4FB /* ProductReviewsHeaderView.xib */; };
@@ -105,7 +104,6 @@
 		01A12293260FEF8D00D5AC7D /* CrashlyticsLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A1221F260FE5BE00D5AC7D /* CrashlyticsLogger.swift */; };
 		01A12294260FEF8D00D5AC7D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FBC2260D07EA000CE4FB /* Constants.swift */; };
 		01A12296260FEF8D00D5AC7D /* NetworkLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01A8FB4A260CFBA9000CE4FB /* NetworkLayer.framework */; };
-		01A12297260FEF8D00D5AC7D /* Pods_AdiChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2152897293CE218866D4D3EE /* Pods_AdiChallenge.framework */; };
 		01A12299260FEF8D00D5AC7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01A8FAFF260CF868000CE4FB /* LaunchScreen.storyboard */; };
 		01A1229A260FEF8D00D5AC7D /* AdiHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01A8FBDF260D1251000CE4FB /* AdiHomeViewController.xib */; };
 		01A1229B260FEF8D00D5AC7D /* ProductReviewsHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01A8FC5C260D515F000CE4FB /* ProductReviewsHeaderView.xib */; };
@@ -160,6 +158,8 @@
 		01A8FC7B260D726C000CE4FB /* ProductPresentationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FC7A260D726C000CE4FB /* ProductPresentationModel.swift */; };
 		083B432413521ADB01F6AB09 /* Pods_AdiChallenge_AdiChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDE8DDFF68A1948196F0B678 /* Pods_AdiChallenge_AdiChallengeUITests.framework */; };
 		52C9499F3225B06DA723CC3A /* Pods_AdiChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D508E2CD1704B53AD38ED037 /* Pods_AdiChallengeTests.framework */; };
+		76D17E2607F5264660726E5B /* Pods_AdiChallenge_AdiChallenge_Development.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C07F5288BFA5557E8D8D70 /* Pods_AdiChallenge_AdiChallenge_Development.framework */; };
+		7B4024B46CBF12711B570EA1 /* Pods_AdiChallenge_AdiChallenge_Staging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00FBF4636B8DA82CA7E09F0F /* Pods_AdiChallenge_AdiChallenge_Staging.framework */; };
 		EF147DA2C0B69905D96AE370 /* Pods_AdiChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2152897293CE218866D4D3EE /* Pods_AdiChallenge.framework */; };
 /* End PBXBuildFile section */
 
@@ -231,6 +231,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		00FBF4636B8DA82CA7E09F0F /* Pods_AdiChallenge_AdiChallenge_Staging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdiChallenge_AdiChallenge_Staging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		01978323260E097C00B2FE85 /* ReviewView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewView.xib; sourceTree = "<group>"; };
 		01978327260E099000B2FE85 /* ReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewView.swift; sourceTree = "<group>"; };
 		01978362260E39C500B2FE85 /* UIViewController+KeyboardDismiss.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+KeyboardDismiss.swift"; sourceTree = "<group>"; };
@@ -299,13 +300,17 @@
 		01A8FC6E260D62D5000CE4FB /* ProductReviewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductReviewTableViewCell.xib; sourceTree = "<group>"; };
 		01A8FC76260D644B000CE4FB /* ProductDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewModel.swift; sourceTree = "<group>"; };
 		01A8FC7A260D726C000CE4FB /* ProductPresentationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductPresentationModel.swift; sourceTree = "<group>"; };
+		09C07F5288BFA5557E8D8D70 /* Pods_AdiChallenge_AdiChallenge_Development.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdiChallenge_AdiChallenge_Development.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		18C17E1BFB7A62C834F3957C /* Pods-AdiChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdiChallenge.debug.xcconfig"; path = "Target Support Files/Pods-AdiChallenge/Pods-AdiChallenge.debug.xcconfig"; sourceTree = "<group>"; };
-		2152897293CE218866D4D3EE /* Pods_AdiChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdiChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FDEC663548DD923DCF6729C /* Pods-AdiChallenge-AdiChallenge Staging.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdiChallenge-AdiChallenge Staging.release.xcconfig"; path = "Target Support Files/Pods-AdiChallenge-AdiChallenge Staging/Pods-AdiChallenge-AdiChallenge Staging.release.xcconfig"; sourceTree = "<group>"; };
 		69932162E90D3C565424E247 /* Pods-AdiChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdiChallenge.release.xcconfig"; path = "Target Support Files/Pods-AdiChallenge/Pods-AdiChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		76259AAD18F8E8DBB84630BF /* Pods-AdiChallenge-AdiChallenge Development.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdiChallenge-AdiChallenge Development.debug.xcconfig"; path = "Target Support Files/Pods-AdiChallenge-AdiChallenge Development/Pods-AdiChallenge-AdiChallenge Development.debug.xcconfig"; sourceTree = "<group>"; };
 		868B0B59E59F94DDC803CAA6 /* Pods-AdiChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdiChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-AdiChallengeTests/Pods-AdiChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8D41AA84A3FAF4CC659F2218 /* Pods-AdiChallenge-AdiChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdiChallenge-AdiChallengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-AdiChallenge-AdiChallengeUITests/Pods-AdiChallenge-AdiChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BCE906290C2702D56CF2FC64 /* Pods-AdiChallenge-AdiChallenge Development.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdiChallenge-AdiChallenge Development.release.xcconfig"; path = "Target Support Files/Pods-AdiChallenge-AdiChallenge Development/Pods-AdiChallenge-AdiChallenge Development.release.xcconfig"; sourceTree = "<group>"; };
 		CDE8DDFF68A1948196F0B678 /* Pods_AdiChallenge_AdiChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdiChallenge_AdiChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D508E2CD1704B53AD38ED037 /* Pods_AdiChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdiChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D81E357335C9D1F117F8B483 /* Pods-AdiChallenge-AdiChallenge Staging.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdiChallenge-AdiChallenge Staging.debug.xcconfig"; path = "Target Support Files/Pods-AdiChallenge-AdiChallenge Staging/Pods-AdiChallenge-AdiChallenge Staging.debug.xcconfig"; sourceTree = "<group>"; };
 		EEF1B26F675B03862EEB7921 /* Pods-AdiChallenge-AdiChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdiChallenge-AdiChallengeUITests.release.xcconfig"; path = "Target Support Files/Pods-AdiChallenge-AdiChallengeUITests/Pods-AdiChallenge-AdiChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F6FD13587AA477A581222226 /* Pods-AdiChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdiChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-AdiChallengeTests/Pods-AdiChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -316,7 +321,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				01A12259260FEF7B00D5AC7D /* NetworkLayer.framework in Frameworks */,
-				01A1225A260FEF7B00D5AC7D /* Pods_AdiChallenge.framework in Frameworks */,
+				7B4024B46CBF12711B570EA1 /* Pods_AdiChallenge_AdiChallenge_Staging.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,7 +330,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				01A12296260FEF8D00D5AC7D /* NetworkLayer.framework in Frameworks */,
-				01A12297260FEF8D00D5AC7D /* Pods_AdiChallenge.framework in Frameworks */,
+				76D17E2607F5264660726E5B /* Pods_AdiChallenge_AdiChallenge_Development.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -707,6 +712,10 @@
 				EEF1B26F675B03862EEB7921 /* Pods-AdiChallenge-AdiChallengeUITests.release.xcconfig */,
 				868B0B59E59F94DDC803CAA6 /* Pods-AdiChallengeTests.debug.xcconfig */,
 				F6FD13587AA477A581222226 /* Pods-AdiChallengeTests.release.xcconfig */,
+				76259AAD18F8E8DBB84630BF /* Pods-AdiChallenge-AdiChallenge Development.debug.xcconfig */,
+				BCE906290C2702D56CF2FC64 /* Pods-AdiChallenge-AdiChallenge Development.release.xcconfig */,
+				D81E357335C9D1F117F8B483 /* Pods-AdiChallenge-AdiChallenge Staging.debug.xcconfig */,
+				3FDEC663548DD923DCF6729C /* Pods-AdiChallenge-AdiChallenge Staging.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -714,9 +723,10 @@
 		74807606BD9E54AFAE993E14 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2152897293CE218866D4D3EE /* Pods_AdiChallenge.framework */,
 				CDE8DDFF68A1948196F0B678 /* Pods_AdiChallenge_AdiChallengeUITests.framework */,
 				D508E2CD1704B53AD38ED037 /* Pods_AdiChallengeTests.framework */,
+				09C07F5288BFA5557E8D8D70 /* Pods_AdiChallenge_AdiChallenge_Development.framework */,
+				00FBF4636B8DA82CA7E09F0F /* Pods_AdiChallenge_AdiChallenge_Staging.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -981,7 +991,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AdiChallenge-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-AdiChallenge-AdiChallenge Staging-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -994,15 +1004,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AdiChallenge/Pods-AdiChallenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-AdiChallenge-AdiChallenge Staging/Pods-AdiChallenge-AdiChallenge Staging-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AdiChallenge/Pods-AdiChallenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-AdiChallenge-AdiChallenge Staging/Pods-AdiChallenge-AdiChallenge Staging-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AdiChallenge/Pods-AdiChallenge-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AdiChallenge-AdiChallenge Staging/Pods-AdiChallenge-AdiChallenge Staging-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		01A12272260FEF8D00D5AC7D /* [CP] Check Pods Manifest.lock */ = {
@@ -1020,7 +1030,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AdiChallenge-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-AdiChallenge-AdiChallenge Development-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1033,15 +1043,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AdiChallenge/Pods-AdiChallenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-AdiChallenge-AdiChallenge Development/Pods-AdiChallenge-AdiChallenge Development-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AdiChallenge/Pods-AdiChallenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-AdiChallenge-AdiChallenge Development/Pods-AdiChallenge-AdiChallenge Development-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AdiChallenge/Pods-AdiChallenge-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AdiChallenge-AdiChallenge Development/Pods-AdiChallenge-AdiChallenge Development-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		0A8B1471D2A81DDDA0B81F4F /* [CP] Embed Pods Frameworks */ = {
@@ -1317,7 +1327,7 @@
 /* Begin XCBuildConfiguration section */
 		01A1226B260FEF7B00D5AC7D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 18C17E1BFB7A62C834F3957C /* Pods-AdiChallenge.debug.xcconfig */;
+			baseConfigurationReference = D81E357335C9D1F117F8B483 /* Pods-AdiChallenge-AdiChallenge Staging.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1338,7 +1348,7 @@
 		};
 		01A1226C260FEF7B00D5AC7D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 69932162E90D3C565424E247 /* Pods-AdiChallenge.release.xcconfig */;
+			baseConfigurationReference = 3FDEC663548DD923DCF6729C /* Pods-AdiChallenge-AdiChallenge Staging.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1359,7 +1369,7 @@
 		};
 		01A122A8260FEF8D00D5AC7D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 18C17E1BFB7A62C834F3957C /* Pods-AdiChallenge.debug.xcconfig */;
+			baseConfigurationReference = 76259AAD18F8E8DBB84630BF /* Pods-AdiChallenge-AdiChallenge Development.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1380,7 +1390,7 @@
 		};
 		01A122A9260FEF8D00D5AC7D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 69932162E90D3C565424E247 /* Pods-AdiChallenge.release.xcconfig */;
+			baseConfigurationReference = BCE906290C2702D56CF2FC64 /* Pods-AdiChallenge-AdiChallenge Development.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

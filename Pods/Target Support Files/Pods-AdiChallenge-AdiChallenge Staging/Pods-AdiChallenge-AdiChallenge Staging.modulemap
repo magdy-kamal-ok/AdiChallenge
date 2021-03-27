@@ -1,0 +1,6 @@
+framework module Pods_AdiChallenge_AdiChallenge_Staging {
+  umbrella header "Pods-AdiChallenge-AdiChallenge Staging-umbrella.h"
+
+  export *
+  module * { export * }
+}
