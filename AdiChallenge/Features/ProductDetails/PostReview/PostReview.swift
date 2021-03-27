@@ -9,7 +9,7 @@ import NetworkLayer
 
 protocol PostReviewProtocol {
     typealias PostReviewResult = (Result<Review, AdiErrorModel>) -> Void
-    init(requestHandler: RequstHandlerProtocol)
+    init(requestHandler: RequstHandlerProtocol, logger: NonFatalErrorLogger)
     func postReview(params: [String: Any], _ completionHandler: @escaping PostReviewResult)
     func cancelRequest()
 }
@@ -18,7 +18,7 @@ class PostReview: PostReviewProtocol {
     
     private let dataProvider: DataProvider<Review, AdiErrorModel>
     
-    required init(requestHandler: RequstHandlerProtocol) {
+    required init(requestHandler: RequstHandlerProtocol, logger: NonFatalErrorLogger = CrashlyticsLogger.shared) {
         dataProvider = DataProvider(requestHandler: requestHandler)
     }
     

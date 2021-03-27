@@ -12,7 +12,7 @@ class RemoteHomeDataSource: HomeRepositoryProtocol {
     
     private let dataProvider: DataProvider<[Product], AdiErrorModel>
     
-    required init(requestHandler: RequstHandlerProtocol) {
+    required init(requestHandler: RequstHandlerProtocol, logger: NonFatalErrorLogger = CrashlyticsLogger.shared) {
         dataProvider = DataProvider(requestHandler: requestHandler)
     }
     

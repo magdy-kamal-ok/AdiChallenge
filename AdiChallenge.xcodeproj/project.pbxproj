@@ -23,6 +23,8 @@
 		01A121DA260F99DB00D5AC7D /* InvalidPostReviewResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 01A121D9260F99DB00D5AC7D /* InvalidPostReviewResponse.json */; };
 		01A121DE260F9A3E00D5AC7D /* MockedPostReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A121DD260F9A3E00D5AC7D /* MockedPostReview.swift */; };
 		01A121E2260F9ABD00D5AC7D /* AdiProductDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A121E1260F9ABD00D5AC7D /* AdiProductDetailsViewModelTests.swift */; };
+		01A121FB260FD1AC00D5AC7D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 01A121F8260FD1AC00D5AC7D /* GoogleService-Info.plist */; };
+		01A12220260FE5BE00D5AC7D /* CrashlyticsLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A1221F260FE5BE00D5AC7D /* CrashlyticsLogger.swift */; };
 		01A8FAF5260CF867000CE4FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8FAF4260CF867000CE4FB /* AppDelegate.swift */; };
 		01A8FAFE260CF868000CE4FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01A8FAFD260CF868000CE4FB /* Assets.xcassets */; };
 		01A8FB01260CF868000CE4FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01A8FAFF260CF868000CE4FB /* LaunchScreen.storyboard */; };
@@ -129,6 +131,8 @@
 		01A121D9260F99DB00D5AC7D /* InvalidPostReviewResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = InvalidPostReviewResponse.json; sourceTree = "<group>"; };
 		01A121DD260F9A3E00D5AC7D /* MockedPostReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedPostReview.swift; sourceTree = "<group>"; };
 		01A121E1260F9ABD00D5AC7D /* AdiProductDetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdiProductDetailsViewModelTests.swift; sourceTree = "<group>"; };
+		01A121F8260FD1AC00D5AC7D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		01A1221F260FE5BE00D5AC7D /* CrashlyticsLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrashlyticsLogger.swift; sourceTree = "<group>"; };
 		01A8FAF1260CF867000CE4FB /* AdiChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdiChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01A8FAF4260CF867000CE4FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01A8FAFD260CF868000CE4FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -286,6 +290,7 @@
 				01A8FAF4260CF867000CE4FB /* AppDelegate.swift */,
 				01A8FAFD260CF868000CE4FB /* Assets.xcassets */,
 				01A8FAFF260CF868000CE4FB /* LaunchScreen.storyboard */,
+				01A121F8260FD1AC00D5AC7D /* GoogleService-Info.plist */,
 				01A8FB02260CF868000CE4FB /* Info.plist */,
 			);
 			path = AdiChallenge;
@@ -356,6 +361,7 @@
 				01978362260E39C500B2FE85 /* UIViewController+KeyboardDismiss.swift */,
 				01978382260E79C600B2FE85 /* String+localized.swift */,
 				01978388260E7FD300B2FE85 /* UIViewController+Alert.swift */,
+				01A1221F260FE5BE00D5AC7D /* CrashlyticsLogger.swift */,
 			);
 			path = "Utilities+Extensions";
 			sourceTree = "<group>";
@@ -677,6 +683,7 @@
 				0197837E260E787100B2FE85 /* Localizable.strings in Resources */,
 				01A8FC04260D2613000CE4FB /* HomeProductTableViewCell.xib in Resources */,
 				01A8FC70260D62D5000CE4FB /* ProductReviewTableViewCell.xib in Resources */,
+				01A121FB260FD1AC00D5AC7D /* GoogleService-Info.plist in Resources */,
 				01A8FC44260D3C86000CE4FB /* ProductDetailsHeaderView.xib in Resources */,
 				01A8FAFE260CF868000CE4FB /* Assets.xcassets in Resources */,
 			);
@@ -841,6 +848,7 @@
 				01A8FAF5260CF867000CE4FB /* AppDelegate.swift in Sources */,
 				01A8FBE0260D1251000CE4FB /* AdiHomeViewController.swift in Sources */,
 				01A8FC2A260D2F04000CE4FB /* RemoteHomeDataSource.swift in Sources */,
+				01A12220260FE5BE00D5AC7D /* CrashlyticsLogger.swift in Sources */,
 				01A8FBC3260D07EA000CE4FB /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

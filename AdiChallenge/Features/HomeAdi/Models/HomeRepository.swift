@@ -10,14 +10,14 @@ import NetworkLayer
 
 protocol HomeRepositoryProtocol {
     typealias RepositoryResult = (Result<[Product], AdiErrorModel>) -> Void
-    init(requestHandler: RequstHandlerProtocol)
+    init(requestHandler: RequstHandlerProtocol, logger: NonFatalErrorLogger)
     func fetchProducts(_ completionHandler: @escaping RepositoryResult)
     func cancelRequest()
 }
 
 extension HomeRepositoryProtocol {
-    init(requestHandler: RequstHandlerProtocol) {
-        self.init(requestHandler: requestHandler)
+    init(requestHandler: RequstHandlerProtocol, logger: NonFatalErrorLogger) {
+        self.init(requestHandler: requestHandler, logger: logger)
     }
 }
 

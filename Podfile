@@ -6,6 +6,7 @@ target 'AdiChallenge' do
   use_frameworks!
 
   pod 'Cosmos', '~> 23.0'
+  pod 'Firebase/Crashlytics', '~> 7.8.0'
 
   target 'AdiChallengeTests' do
     inherit! :search_paths
