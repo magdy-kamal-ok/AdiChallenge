@@ -17,8 +17,9 @@ protocol PostReviewProtocol {
 class PostReview: PostReviewProtocol {
     
     private let dataProvider: DataProvider<Review, AdiErrorModel>
-    
+    private let logger: NonFatalErrorLogger
     required init(requestHandler: RequstHandlerProtocol, logger: NonFatalErrorLogger = CrashlyticsLogger.shared) {
+        self.logger = logger
         dataProvider = DataProvider(requestHandler: requestHandler)
     }
     
@@ -37,11 +38,15 @@ class PostReview: PostReviewProtocol {
             if let review = response.0 {
                 completionHandler(.success(review))
             } else if let error = response.1 as? AdiErrorModel {
+                self.logger.logNonFatalError(error: error)
                 completionHandler(.failure(error))
             } else if let error = response.1 as? ErrorModel, let message = error.message {
+                self.logger.logNonFatalError(error: error)
                 completionHandler(.failure(AdiErrorModel(message: message)))
             } else {
-                completionHandler(.failure(AdiErrorModel(message: self.getUnknownError().message!)))
+                let unknownError = self.getUnknownError()
+                self.logger.logNonFatalError(error: unknownError)
+                completionHandler(.failure(AdiErrorModel(message: unknownError.message!)))
             }
         }
     }

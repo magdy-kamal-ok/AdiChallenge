@@ -18,19 +18,14 @@ class ProductDetailsViewModel {
     private weak var coordinator: ProductDetailsCoordinator?
     private var product: Product
     private let postReview: PostReviewProtocol
-
+    private(set) var sectionList: [ProductDetailsSection] = []
+    
     var productInfo: ProductPresentationModel {
         get {
              ProductPresentationModel.init(product: product)
         }
     }
-
-    var productReviews: [ProductReview] {
-        get {
-            product.reviews.map { ProductReview(review: $0) }
-        }
-    }
-
+    
     var state: State
     
     //
@@ -40,6 +35,8 @@ class ProductDetailsViewModel {
         self.postReview = postReview
         self.coordinator = coordinator as? ProductDetailsCoordinator
         self.product = product
+        sectionList.append(.productInfo)
+        sectionList.append(.productReviews(product.reviews.map { ProductReview(review: $0) }))
         state = State(isLoading: Binder(), showAddNewReview: Binder(), reloadData: Binder(), showAlert: Binder())
     }
     
@@ -59,6 +56,9 @@ class ProductDetailsViewModel {
             switch result {
             case .success(let review):
                 self.product.reviews.append(review)
+                if let reviewsSectionIndex = self.sectionList.firstIndex(where: { if case .productReviews = $0 { return true }; return false }) {
+                    self.sectionList[reviewsSectionIndex] = .productReviews(self.product.reviews.map { ProductReview(review: $0) })
+                }
             case .failure(let error):
                 self.state.showAlert(AdiAlertModel(title: "error".localized, message: error.message))
             }

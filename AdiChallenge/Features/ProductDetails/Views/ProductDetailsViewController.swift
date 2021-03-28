@@ -7,6 +7,28 @@
 
 import UIKit
 
+enum ProductDetailsSection {
+    case productInfo
+    case productReviews([ProductReview])
+
+    var rowsList: [Any] {
+        switch self {
+        case .productInfo:
+            return []
+        case .productReviews(let list):
+            return list
+        }
+    }
+    var count: Int {
+        switch self {
+        case .productInfo:
+            return 0
+        case .productReviews(let list):
+            return list.count
+        }
+    }
+}
+
 class ProductDetailsViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
@@ -97,33 +119,37 @@ class ProductDetailsViewController: UIViewController {
 extension ProductDetailsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        2
+        viewModel.sectionList.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return section == 1 ? viewModel.productReviews.count : 0
+        return viewModel.sectionList[section].count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeue() as ProductReviewTableViewCell
-        cell.productReview = viewModel.productReviews[indexPath.row]
-        return cell
+        switch viewModel.sectionList[indexPath.section] {
+        case .productReviews(let reviews):
+            let cell = tableView.dequeue() as ProductReviewTableViewCell
+            cell.productReview = reviews[indexPath.row]
+            return cell
+        default:
+            return UITableViewCell()
+        }
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        if section == 0 {
+        switch viewModel.sectionList[section] {
+        case .productInfo:
             let headerView = tableView.dequeueHeader() as ProductDetailsHeaderView
             productDetailsHeaderView = headerView
             headerView.productInfo = viewModel.productInfo
             return headerView
-        } else if section == 1 {
+        case .productReviews:
             let headerView = tableView.dequeueHeader() as ProductReviewsHeaderView
             headerView.didPressAddNewReview.bind(on: self) { (self, _) in
                 self.viewModel.didPressAddNewReview()
             }
             return headerView
-        } else {
-            return nil
         }
     }
 }
