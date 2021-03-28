@@ -12,8 +12,10 @@ import NetworkLayer
 class MockedHomeRepository: HomeRepositoryProtocol {
   
     let requestHandler: RequstHandlerProtocol
-    
-    required init(requestHandler: RequstHandlerProtocol) {
+    let logger: NonFatalErrorLogger
+
+    required init(requestHandler: RequstHandlerProtocol, logger: NonFatalErrorLogger = MockedNonFatalErrorLogger()) {
+        self.logger = logger
         self.requestHandler = requestHandler
     }
     
@@ -25,9 +27,11 @@ class MockedHomeRepository: HomeRepositoryProtocol {
             if let parsedObj: [Product] = CodableParserManager().parseData(data: data) {
                 completionHandler(.success(parsedObj))
             } else {
+                logger.logNonFatalError(error: LocalError.unknownError)
                 completionHandler(.failure(AdiErrorModel(message: LocalError.unknownError.localizedDescription)))
             }
         } catch {
+            logger.logNonFatalError(error: LocalError.parsingFailure)
             completionHandler(.failure(AdiErrorModel(message: LocalError.parsingFailure.localizedDescription)))
         }
     }

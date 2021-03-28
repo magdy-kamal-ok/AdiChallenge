@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK: - Product
-public class Product: Codable {
+public struct Product: Codable {
     let currency: String
     let price: Int
     let id, name, productDescription: String
@@ -20,16 +20,6 @@ public class Product: Codable {
         case productDescription = "description"
         case imgURL = "imgUrl"
         case reviews
-    }
-
-    init(currency: String, price: Int, id: String, name: String, productDescription: String, imgURL: String, reviews: [Review]) {
-        self.currency = currency
-        self.price = price
-        self.id = id
-        self.name = name
-        self.productDescription = productDescription
-        self.imgURL = imgURL
-        self.reviews = reviews
     }
 }
 

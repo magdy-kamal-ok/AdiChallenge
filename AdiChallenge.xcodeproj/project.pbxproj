@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0111E2AA261008DE004BE216 /* MockedNonFatalErrorLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0111E2A9261008DE004BE216 /* MockedNonFatalErrorLogger.swift */; };
 		01978324260E097C00B2FE85 /* ReviewView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01978323260E097C00B2FE85 /* ReviewView.xib */; };
 		01978328260E099000B2FE85 /* ReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01978327260E099000B2FE85 /* ReviewView.swift */; };
 		01978363260E39C500B2FE85 /* UIViewController+KeyboardDismiss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01978362260E39C500B2FE85 /* UIViewController+KeyboardDismiss.swift */; };
@@ -160,7 +161,7 @@
 		52C9499F3225B06DA723CC3A /* Pods_AdiChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D508E2CD1704B53AD38ED037 /* Pods_AdiChallengeTests.framework */; };
 		76D17E2607F5264660726E5B /* Pods_AdiChallenge_AdiChallenge_Development.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C07F5288BFA5557E8D8D70 /* Pods_AdiChallenge_AdiChallenge_Development.framework */; };
 		7B4024B46CBF12711B570EA1 /* Pods_AdiChallenge_AdiChallenge_Staging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00FBF4636B8DA82CA7E09F0F /* Pods_AdiChallenge_AdiChallenge_Staging.framework */; };
-		EF147DA2C0B69905D96AE370 /* Pods_AdiChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2152897293CE218866D4D3EE /* Pods_AdiChallenge.framework */; };
+		EF147DA2C0B69905D96AE370 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -232,6 +233,7 @@
 
 /* Begin PBXFileReference section */
 		00FBF4636B8DA82CA7E09F0F /* Pods_AdiChallenge_AdiChallenge_Staging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdiChallenge_AdiChallenge_Staging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0111E2A9261008DE004BE216 /* MockedNonFatalErrorLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedNonFatalErrorLogger.swift; sourceTree = "<group>"; };
 		01978323260E097C00B2FE85 /* ReviewView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewView.xib; sourceTree = "<group>"; };
 		01978327260E099000B2FE85 /* ReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewView.swift; sourceTree = "<group>"; };
 		01978362260E39C500B2FE85 /* UIViewController+KeyboardDismiss.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+KeyboardDismiss.swift"; sourceTree = "<group>"; };
@@ -339,7 +341,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				01A8FB53260CFBBB000CE4FB /* NetworkLayer.framework in Frameworks */,
-				EF147DA2C0B69905D96AE370 /* Pods_AdiChallenge.framework in Frameworks */,
+				EF147DA2C0B69905D96AE370 /* (null) in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,6 +387,7 @@
 				01A121AF260F813500D5AC7D /* MockedHomeRepository.swift */,
 				01A121B7260F848100D5AC7D /* MockedRequestFactory.swift */,
 				01A121DD260F9A3E00D5AC7D /* MockedPostReview.swift */,
+				0111E2A9261008DE004BE216 /* MockedNonFatalErrorLogger.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -1285,6 +1288,7 @@
 				01A8FB0C260CF869000CE4FB /* AdiChallengeHomeViewModelTests.swift in Sources */,
 				01A121E2260F9ABD00D5AC7D /* AdiProductDetailsViewModelTests.swift in Sources */,
 				01A121B8260F848100D5AC7D /* MockedRequestFactory.swift in Sources */,
+				0111E2AA261008DE004BE216 /* MockedNonFatalErrorLogger.swift in Sources */,
 				01A121B0260F813500D5AC7D /* MockedHomeRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -42,8 +42,8 @@ class AdiProductDetailsViewModelTests: XCTestCase {
         XCTAssertEqual(productInfo?.image, "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/Superstar_Shoes_Black_FY0071_01_standard.jpg")
     }
     
-    func testProductDetailsReviewsData() throws {
-        XCTAssertEqual(sut?.productReviews.count, 0)
+    func testProductDetailsSectionsCount() throws {
+        XCTAssertEqual(sut?.sectionList.count, 2)
     }
     
 }

@@ -33,9 +33,10 @@ class ProductDetailsViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var activityLoadingIndicator: UIActivityIndicatorView!
-    private var productDetailsHeaderView: ProductDetailsHeaderView?
     
+    private var productDetailsHeaderView: ProductDetailsHeaderView?
     private let viewModel: ProductDetailsViewModel
+    
     init(viewModel: ProductDetailsViewModel) {
         self.viewModel = viewModel
         super.init(nibName: "ProductDetailsViewController", bundle: nil)
@@ -48,10 +49,7 @@ class ProductDetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
-    }
-    
-    deinit {
-        print("deinit called")
+        observeForViewModelChanges()
     }
     
     private func setupViews() {
@@ -62,6 +60,9 @@ class ProductDetailsViewController: UIViewController {
         tableView.registerCellNib(cellClass: ProductReviewTableViewCell.self)
         tableView.registerHeaderNib(headerClass: ProductDetailsHeaderView.self)
         tableView.registerHeaderNib(headerClass: ProductReviewsHeaderView.self)
+    }
+    
+    private func observeForViewModelChanges() {
         viewModel.state.showAddNewReview.bind(on: self) { (self, _) in
             DispatchQueue.main.async {
                 self.showAlert()

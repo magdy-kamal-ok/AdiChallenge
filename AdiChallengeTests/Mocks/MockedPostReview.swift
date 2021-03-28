@@ -10,12 +10,15 @@ import NetworkLayer
 @testable import AdiChallenge
 
 class MockedPostReview: PostReviewProtocol {
-  
+
+    let logger: NonFatalErrorLogger
     let requestHandler: RequstHandlerProtocol
     
-    required init(requestHandler: RequstHandlerProtocol) {
+    required init(requestHandler: RequstHandlerProtocol, logger: NonFatalErrorLogger = MockedNonFatalErrorLogger()) {
+        self.logger = logger
         self.requestHandler = requestHandler
     }
+    
     func postReview(params: [String : Any], _ completionHandler: @escaping PostReviewResult) {
         let bundle = Bundle(for: MockedPostReview.self)
         let dataPath = bundle.url(forResource: requestHandler.getApiUrl(), withExtension: "json")
@@ -24,9 +27,11 @@ class MockedPostReview: PostReviewProtocol {
             if let parsedObj: Review = CodableParserManager().parseData(data: data) {
                 completionHandler(.success(parsedObj))
             } else {
+                logger.logNonFatalError(error: LocalError.unknownError)
                 completionHandler(.failure(AdiErrorModel(message: LocalError.unknownError.localizedDescription)))
             }
         } catch {
+            logger.logNonFatalError(error: LocalError.parsingFailure)
             completionHandler(.failure(AdiErrorModel(message: LocalError.parsingFailure.localizedDescription)))
         }
     }

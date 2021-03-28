@@ -11,9 +11,9 @@ class AdiHomeViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var activityLoadingIndicator: UIActivityIndicatorView!
+    
     private var refreshControl: UIRefreshControl?
-
-    let viewModel: AdiHomeViewModel
+    private let viewModel: AdiHomeViewModel
     
     init(viewModel: AdiHomeViewModel) {
         self.viewModel = viewModel
@@ -28,10 +28,13 @@ class AdiHomeViewController: UIViewController {
         super.viewDidLoad()
         setupSwipeRefresh()
         setupViews()
+        observeForViewModelChanges()
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         viewModel.fetchProducts()
     }
-    
-
     
     private func setupViews() {
         if let navbar = navigationController?.navigationBar as? AdiNavigationBar {
@@ -42,7 +45,9 @@ class AdiHomeViewController: UIViewController {
         tableView.dataSource = self
         tableView.keyboardDismissMode = .onDrag
         tableView.registerCellNib(cellClass: HomeProductTableViewCell.self)
-        
+    }
+
+    private func observeForViewModelChanges() {
         viewModel.state.reloadData.bind(on: self) { (self, _) in
             DispatchQueue.main.async {
                 self.checkRefreshControlState()
@@ -66,7 +71,7 @@ class AdiHomeViewController: UIViewController {
             }
         }
     }
-
+    
     // MARK: Refresh cotrol
     func setupSwipeRefresh() -> Void {
         refreshControl = UIRefreshControl()
