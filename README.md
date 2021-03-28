@@ -16,7 +16,7 @@ Release notes : Xcode Version : Developed in Xcode 12.2 Swift Version: Swift 5.3
 	1- NetworkLayer: is natively built framework with ability to be extended with other ApiClientManagers(like Alamofire, or Local Cached Files Manager), 
      and support DataProvider which enable Support for Codable Responses and 2 Types of Error (Local Client Error, and Remote Error), 
      and can support Local Cached Files like json file, with dynamic retry count for requests.
-  2- FirebaseCrashlytics: for crash reporting, and used to log non fatal errors
+  	2- FirebaseCrashlytics: for crash reporting, and used to log non fatal errors
 
     
 # Usage:
