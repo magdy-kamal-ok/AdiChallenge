@@ -10,8 +10,10 @@ import Foundation
 class Constants {
     
     // MARK: Request Constants
-    private static let baseURL = "http://localhost:3001"
-    public static let productsApiURL = "http://localhost:3001/product"
-    public static let reviewsApiURL = "http://localhost:3002/reviews/%@"
-    public static let isCrashlyticsLoggerEnabled = true
+    private static let baseURL = "http://localhost"
+    public static let productsApiURL = baseURL + ":3001/product"
+    public static let reviewsApiURL =  baseURL + ":3002/reviews/%@"
+    
+    // MARK: Adi CrashReporting Flag
+    public static let isNonFatalErrorCrashlyticsLoggerEnabled = true
 }

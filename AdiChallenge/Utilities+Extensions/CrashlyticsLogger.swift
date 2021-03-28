@@ -24,7 +24,7 @@ class CrashlyticsLogger: NonFatalErrorLogger {
     
     func logNonFatalError(error: Error) {
         // Record non-fatal exceptions and sends them to you the next time the app launches
-        if Constants.isCrashlyticsLoggerEnabled {
+        if Constants.isNonFatalErrorCrashlyticsLoggerEnabled {
             Crashlytics.crashlytics().record(error: error)
         }
     }

@@ -30,7 +30,11 @@ class AdiHomeViewModel {
             if searchText.isEmpty {
                 return allAvailableProducts.map { ProductPresentationModel.init(product: $0) }
             } else {
-                return allAvailableProducts.filter { $0.name.lowercased().contains(searchText.lowercased()) || $0.productDescription.lowercased().contains(searchText.lowercased())}.map { ProductPresentationModel(product: $0) }
+                let filteredProducts = allAvailableProducts.filter { $0.name.lowercased().contains(searchText.lowercased()) || $0.productDescription.lowercased().contains(searchText.lowercased())}.map { ProductPresentationModel(product: $0) }
+                if filteredProducts.isEmpty {
+                    state.showAlert(AdiAlertModel(title: "warning".localized, message: "empty-search-result".localized))
+                }
+                return filteredProducts
             }
         }
     }
