@@ -30,7 +30,7 @@ platform :ios do
   
      # upload Ipa to firebseDistribution 
      firebase_app_distribution(
-      app: "1:1082285615166:ios:547effb481247b9f29496f",
+      app: "1:147708403073:ios:0101351516dc7471e15c80",
       release_notes: "Lots of amazing new features to test out!", 
       firebase_cli_token: "add your firebase token here"
     )
