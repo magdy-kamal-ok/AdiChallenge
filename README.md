@@ -12,7 +12,7 @@ Release notes : Xcode Version : Developed in Xcode 12.2 Swift Version: Swift 5.3
     1- app support 3 environments schemes (development, staging, production).
     2- added match file for certificates, and fastlane for publishing and run tests.
     
-# FrameWorks:
+# Frameworks:
 	1- NetworkLayer: is natively built framework with ability to be extended with other ApiClientManagers(like Alamofire, or Local Cached Files Manager), 
      and support DataProvider which enable Support for Codable Responses and 2 Types of Error (Local Client Error, and Remote Error), 
      and can support Local Cached Files like json file, with dynamic retry count for requests.
