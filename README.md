@@ -14,10 +14,10 @@ Release notes : Xcode Version : Developed in Xcode 12.2 Swift Version: Swift 5.3
     
 # Frameworks:
 	1- NetworkLayer: is natively built framework with ability to be extended with other ApiClientManagers(like Alamofire, or Local Cached Files Manager), 
-     and support DataProvider which enable Support for Codable Responses and 2 Types of Error (Local Client Error, and Remote Error), 
-     and can support Local Cached Files like json file, with dynamic retry count for requests.
-  	2- FirebaseCrashlytics: for crash reporting, and used to log non fatal errors
+     and support DataProvider which support Codable Responses and 2 Types of Error (Local Client Error, and Remote Error), 
+     and can support Local Cached Files like json file, and dynamic retry count for requests.
+  	2- FirebaseCrashlytics: for crash reporting, and used to log non fatal errors.
 
     
 # Usage:
-	just download the .zip file, go to project path in Command Line print  **pod install** then open AdiChallenge.xcworkspace.
+	download the .zip file, go to project path in Command Line print  **pod install** then open AdiChallenge.xcworkspace.
